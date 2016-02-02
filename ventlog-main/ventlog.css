@@ -4,27 +4,51 @@ body {
     background-color: #E5E4E2;
     color: black;
     padding: 5px;
+    width: 966px;
 }
-header {
+div.header {
     background-color: palegreen;
+    background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: fill;
     color: dimgray;
     text-align: center;
     padding: 5px;
+    width: auto;
+    height: ;
+}
+header {
+    color: dimgray;
+    text-align: center;
+    padding: 5px;
+    width: auto;
+    height: ;
+}
+header .logo {
+    float: left;
+    background-image: url()
 }
 nav {
     line-height: 30px;
-    background-color: antiquewhite;
-    height: 300px;
-    width: 100px;
+    #background-color: palegreen;
+    #background-color: palegreen;
+    #background-image: url("http://s16.postimg.org/5l1ox2z8l/header.jpg");
+    #background-repeat: no-repeat;
+    #background-position: center;
+    #background-size: fill;
+    height: 50px;
+    width: inherit;
     float: center;
-    padding: 5px;    
+    padding: 5px;
 }
 nav ul {
     float: center;
-    display: none;
+    display: inline;
 }
 nav ul li {
     color: black;
+    display: inline;
 }
 article {
     width: 350px;
