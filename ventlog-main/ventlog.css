@@ -1,0 +1,51 @@
+<style>
+
+body {
+    background-color: #E5E4E2;
+    color: black;
+    padding: 5px;
+}
+header {
+    background-color: palegreen;
+    color: dimgray;
+    text-align: center;
+    padding: 5px;
+}
+nav {
+    line-height: 30px;
+    background-color: antiquewhite;
+    height: 300px;
+    width: 100px;
+    float: center;
+    padding: 5px;    
+}
+nav ul {
+    float: center;
+    display: none;
+}
+nav ul li {
+    color: black;
+}
+article {
+    width: 350px;
+    float: left;
+    padding: 5px; 
+}
+section {
+    width: 350px;
+    float: left;
+    padding: 5px; 
+}
+aside {
+    width: 350px;
+    float: right;
+    padding: 5px;
+}
+footer {
+    background-color: skyblue;
+    color: dimgray;
+    clear: both;
+    text-align: center;
+    padding: 5px; 
+}
+</style>
