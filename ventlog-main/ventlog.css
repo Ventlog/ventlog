@@ -7,8 +7,8 @@ body {
     width: 992px;
 }
 div.header {
-    background-color: palegreen;
-    background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
+    background-color: azure;
+    #background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -17,18 +17,44 @@ div.header {
     text-align: center;
     padding: 0px;
     width: inherit;
-    height: ;
+    height: auto;
+}
+.gradient {
+    background: blue;
+    background: -webkit-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+    background: -o-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+    background: -moz-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+    background: linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
 }
 header {
     color: dimgray;
     text-align: center;
     padding: 5px;
     width: inherit;
+    height: auto;
 }
 img.logo {
     float: left;
     margin: 5 5 10px 10px;
     height: 75px
+}
+a.tagline:link, a.tagline:visited, a.tagline:active, a.tagline:hover {
+    color: antiquewhite;
+    text-decoration: none;
+    float: left; 
+}
+a.settings:link, a.settings:visited {
+    color: black;
+}
+a.settings:active, a.settings:hover {
+    color: red;
+}
+header ul {
+    float: right;
+    display: inline;
+}
+header ul li {
+    display: inline;
 }
 nav {
     line-height: 30px;
@@ -42,14 +68,17 @@ nav {
     width: inherit;
     float: center;
     padding: 5px;
+    overflow: auto;
 }
 nav ul {
     float: center;
-    display: inline;
+    display: inline-block;
 }
 nav ul li {
+    float: center;
     color: black;
-    display: inline;
+    width: 100px;
+    display: inline-block;
     padding: 5px;
     border-style: solid;
     #background-color: antiquewhite;
