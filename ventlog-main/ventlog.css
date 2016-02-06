@@ -1,108 +1,176 @@
 <style>
 
+/* ======================Default body CSS====================== */
+
 body {
-    background-color: #E5E4E2;
-    color: black;
-    padding: 0px;
-    width: 992px;
+  background-color: #E5E4E2;
+  color: black;
+  padding: 0px;
+  width: 992px;
+  margin: 0 auto;
 }
-div.header {
-    background-color: azure;
-    #background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    #border-radius: 5px;
-    color: dimgray;
-    text-align: center;
-    padding: 0px;
-    width: inherit;
-    height: auto;
+
+#wrap {
+  width: 992px;
+  max-width: 992px;
+  margin: 0 auto;
 }
-.gradient {
-    background: blue;
-    background: -webkit-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-    background: -o-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-    background: -moz-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-    background: linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-}
+
+
+/* ======================Header CSS====================== */
+
 header {
-    color: dimgray;
-    text-align: center;
-    padding: 5px;
-    width: inherit;
-    height: auto;
+  background-color: azure;
+  #background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  #border-radius: 5px;
+  color: dimgray;
+  text-align: center;
+  padding: 0px;
+  width: inherit;
+  height: 100px;
 }
+
+.gradient {
+  background: azure;
+  background: -webkit-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+  background: -o-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+  background: -moz-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+  background: linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+}
+
+
+/* ======================Logo====================== */
+
+div.top {
+  display: block;
+  float: none;
+}
+
+
+/* ======================Logo====================== */
+
+div.logo {
+  display: inline-block;
+  float: left;
+}
+
 img.logo {
-    float: left;
-    margin: 5 5 10px 10px;
-    height: 75px
+  margin: 5 5 10px 10px;
+  height: 75px
 }
-a.tagline:link, a.tagline:visited, a.tagline:active, a.tagline:hover {
-    color: antiquewhite;
-    text-decoration: none;
-    float: left; 
+
+
+/* ======================Menu===================== */
+
+div.menu {
+  float: right;
+  #display: inline;
 }
-a.settings:link, a.settings:visited {
-    color: black;
+
+div.menu ul li {}
+
+div.menu ul li {
+  display: inline;
 }
-a.settings:active, a.settings:hover {
-    color: red;
+
+a.menu:link,
+a.menu:visited {
+  color: black;
 }
-header ul {
-    float: right;
-    display: inline;
+
+a.menu:active,
+a.menu:hover {
+  color: red;
 }
-header ul li {
-    display: inline;
+
+
+/* ======================Tagline====================== */
+
+div.tagline {
+  clear: both;
+  display: block;
+  margin-left: 5px;
+  float: left;
 }
+
+a.tagline:link,
+a.tagline:visited,
+a.tagline:active,
+a.tagline:hover {
+  color: antiquewhite;
+  text-decoration: none;
+}
+
+
+/* ======================Nav====================== */
+
+div.nav {
+  margin: auto;
+}
+
 nav {
-    line-height: 30px;
-    #background-color: palegreen;
-    #background-color: palegreen;
-    #background-image: url("http://s16.postimg.org/5l1ox2z8l/header.jpg");
-    #background-repeat: no-repeat;
-    #background-position: center;
-    #background-size: fill;
-    height: 50px;
-    width: inherit;
-    float: center;
-    padding: 5px;
-    overflow: auto;
+  line-height: 30px;
+  #background-color: palegreen;
+  #background-color: palegreen;
+  #background-image: url("http://s16.postimg.org/5l1ox2z8l/header.jpg");
+  #background-repeat: no-repeat;
+  #background-position: center;
+  #background-size: fill;
+  height: 50px;
+  width: inherit;
+  padding: 5px;
 }
+
 nav ul {
-    float: center;
-    display: inline-block;
+  display: inline-block;
 }
+
 nav ul li {
-    float: center;
-    color: black;
-    width: 100px;
-    display: inline-block;
-    padding: 5px;
-    border-style: solid;
-    #background-color: antiquewhite;
+  color: black;
+  width: auto;
+  padding: inherit;
+  display: inline-block;
+  border-style: solid;
+  background-color: antiquewhite;
 }
+
+
+/* ======================Article ====================== */
+
 article {
-    width: 350px;
-    float: left;
-    padding: 5px; 
+  width: 350px;
+  float: left;
+  padding: 5px;
 }
-section {
-    width: 350px;
-    float: left;
-    padding: 5px; 
-}
+
+
+/* ======================Aside====================== */
+
 aside {
-    width: 350px;
-    float: right;
-    padding: 5px;
+  width: 350px;
+  float: right;
+  padding: 5px;
 }
+
+
+/* ======================Footer====================== */
+
 footer {
-    background-color: skyblue;
-    color: dimgray;
-    clear: both;
-    text-align: center;
-    padding: 5px; 
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  background-color: azure;
+  color: #0d0d0d;
+  clear: both;
+  padding: 3px;
 }
+
+footer h4.warning {
+  text-align: right;
+  margin-left: 5px;
+}
+
 </style>
