@@ -1,5 +1,4 @@
 <style>
-
 /* ======================Default body CSS====================== */
 
 body {
@@ -28,17 +27,17 @@ header {
   #border-radius: 5px;
   color: dimgray;
   text-align: center;
-  padding: 0px;
+  padding: 5px;
   width: inherit;
   height: 100px;
 }
 
 .gradient {
   background: azure;
-  background: -webkit-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-  background: -o-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-  background: -moz-linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
-  background: linear-gradient(left, #AFDCEC, #A0CFEC, #7FFFD4);
+  background: -webkit-linear-gradient(top, skyblue, skyblue, skyblue, black);
+  background: -o-linear-gradient(top, skyblue, skyblue, skyblue, black);
+  background: -moz-linear-gradient(top, skyblue, skyblue, skyblue, black);
+  background: linear-gradient(top, skyblue, skyblue, skyblue, black);
 }
 
 
@@ -138,21 +137,78 @@ nav ul li {
 }
 
 
+/* ======================Main ====================== */
+
+main {
+  display: inline-block;
+}
+
+
 /* ======================Article ====================== */
 
-article {
-  width: 350px;
+#article {
+  width: 60%;
   float: left;
-  padding: 5px;
+  margin-right: 3%;
 }
+
+article {
+  width: 100%;
+  padding: 10px;
+}
+
+div.post {
+  padding: 5px;
+  border-bottom-color: skyblue;
+  border-left-color: skyblue;
+  border-style: outset;
+  border-radius: 15px;
+}
+
+article img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 5 5 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+article p {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+div.profilepix {}
 
 
 /* ======================Aside====================== */
 
-aside {
-  width: 350px;
-  float: right;
+#aside {
+  background-color: skyblue;
+  float: left;
+  width: 35%;
+  margin-left: ;
+  margin-right: 0px;
   padding: 5px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: inherit;
+}
+
+div.asideContent {
+  background-color: skyblue;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+  background: skyblue;
+  background: -webkit-linear-gradient(skyblue, gray);
+  background: -o-linear-gradient(skyblue, gray);
+  background: -moz-linear-gradient(skyblue, gray);
+  background: linear-gradient(skyblue, gray);
 }
 
 
