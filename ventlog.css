@@ -134,6 +134,10 @@ nav ul li {
   background-color: skyblue;
 }
 
+#current_page {
+  color: black;
+  background-color: royalblue;
+}
 
 /* ======================Main ====================== */
 
