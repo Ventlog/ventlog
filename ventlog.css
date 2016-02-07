@@ -41,7 +41,7 @@ header {
 }
 
 
-/* ======================Logo====================== */
+/* ======================TOP====================== */
 
 div.top {
   display: block;
@@ -99,7 +99,7 @@ a.tagline:link,
 a.tagline:visited,
 a.tagline:active,
 a.tagline:hover {
-  color: antiquewhite;
+  color: skyblue;
   text-decoration: none;
 }
 
@@ -108,32 +108,30 @@ a.tagline:hover {
 
 div.nav {
   margin: auto;
+  clear: right;
+  width: 50%;
+  height: 50%;
+  margin-top: 60px;
 }
 
 nav {
-  line-height: 30px;
-  #background-color: palegreen;
-  #background-color: palegreen;
-  #background-image: url("http://s16.postimg.org/5l1ox2z8l/header.jpg");
-  #background-repeat: no-repeat;
-  #background-position: center;
-  #background-size: fill;
-  height: 50px;
-  width: inherit;
-  padding: 5px;
+  line-height: 15px;
+  width: 100%;
+  padding: 1px;
 }
 
 nav ul {
   display: inline-block;
+  color: aliceblue;
 }
 
 nav ul li {
-  color: black;
+  color: rgba(50,50,50,.75);
   width: auto;
-  padding: inherit;
+  padding: 1px;;
   display: inline-block;
   border-style: solid;
-  background-color: antiquewhite;
+  background-color: skyblue;
 }
 
 
@@ -203,14 +201,28 @@ div.asideContent {
   background-color: skyblue;
   padding: 5px;
   margin: 5px;
+  border: 1px solid black;
+  border-style: double solid dotted;
   border-radius: 10px;
   background: skyblue;
-  background: -webkit-linear-gradient(skyblue, gray);
-  background: -o-linear-gradient(skyblue, gray);
-  background: -moz-linear-gradient(skyblue, gray);
-  background: linear-gradient(skyblue, gray);
+  background: -webkit-linear-gradient(gray, skyblue);
+  background: -o-linear-gradient(gray, skyblue);
+  background: -moz-linear-gradient(gray, skyblue);
+  background: linear-gradient(gray, skyblue);
+  height: 110px;
+  overflow: hidden;
 }
 
+img.aside {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 5 5 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
 
 /* ======================Footer====================== */
 
