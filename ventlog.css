@@ -1,0 +1,248 @@
+<style>
+/* ======================Default body CSS====================== */
+
+body {
+  background-color: #E5E4E2;
+  color: black;
+  padding: 0px;
+  width: 992px;
+  margin: 0 auto;
+}
+
+#wrap {
+  width: 992px;
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+
+/* ======================Header CSS====================== */
+
+header {
+  background-color: azure;
+  #background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  #border-radius: 5px;
+  color: dimgray;
+  text-align: center;
+  padding: 5px;
+  width: inherit;
+  height: 100px;
+}
+
+.gradient {
+  background: azure;
+  background: -webkit-linear-gradient(top, skyblue, skyblue, skyblue, black);
+  background: -o-linear-gradient(top, skyblue, skyblue, skyblue, black);
+  background: -moz-linear-gradient(top, skyblue, skyblue, skyblue, black);
+  background: linear-gradient(top, skyblue, skyblue, skyblue, black);
+}
+
+
+/* ======================TOP====================== */
+
+div.top {
+  display: block;
+  float: none;
+}
+
+
+/* ======================Logo====================== */
+
+div.logo {
+  display: inline-block;
+  float: left;
+}
+
+img.logo {
+  margin: 5 5 10px 10px;
+  height: 75px
+}
+
+
+/* ======================Menu===================== */
+
+div.menu {
+  float: right;
+  #display: inline;
+}
+
+div.menu ul li {}
+
+div.menu ul li {
+  display: inline;
+}
+
+a.menu:link,
+a.menu:visited {
+  color: black;
+}
+
+a.menu:active,
+a.menu:hover {
+  color: red;
+}
+
+
+/* ======================Tagline====================== */
+
+div.tagline {
+  clear: both;
+  display: block;
+  margin-left: 5px;
+  float: left;
+}
+
+a.tagline:link,
+a.tagline:visited,
+a.tagline:active,
+a.tagline:hover {
+  color: skyblue;
+  text-decoration: none;
+}
+
+
+/* ======================Nav====================== */
+
+div.nav {
+  margin: auto;
+  clear: right;
+  width: 50%;
+  height: 50%;
+  margin-top: 60px;
+}
+
+nav {
+  line-height: 15px;
+  width: 100%;
+  padding: 1px;
+}
+
+nav ul {
+  display: inline-block;
+  color: aliceblue;
+}
+
+nav ul li {
+  color: rgba(50,50,50,.75);
+  width: auto;
+  padding: 1px;;
+  display: inline-block;
+  border-style: solid;
+  background-color: skyblue;
+}
+
+#current_page {
+  color: black;
+  background-color: royalblue;
+}
+
+/* ======================Main ====================== */
+
+main {
+  display: inline-block;
+}
+
+
+/* ======================Article ====================== */
+
+#article {
+  width: 60%;
+  float: left;
+  margin-right: 3%;
+}
+
+article {
+  width: 100%;
+  padding: 10px;
+}
+
+div.post {
+  padding: 5px;
+  border-bottom-color: skyblue;
+  border-left-color: skyblue;
+  border-style: outset;
+  border-radius: 15px;
+}
+
+article img {
+  float: left;
+  height: 100px;
+  width: 100px;
+  margin: 5 5 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+article p {
+  padding: 5px;
+  margin-left: 5px;
+}
+
+div.profilepix {}
+
+
+/* ======================Aside====================== */
+
+#aside {
+  background-color: skyblue;
+  float: left;
+  width: 35%;
+  margin-left: ;
+  margin-right: 0px;
+  padding: 5px;
+  margin-top: 10px;
+  border: 1px solid black;
+  border-radius: 15px;
+  height: inherit;
+}
+
+div.asideContent {
+  background-color: skyblue;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid black;
+  border-style: double solid dotted;
+  border-radius: 10px;
+  background: skyblue;
+  background: -webkit-linear-gradient(gray, skyblue);
+  background: -o-linear-gradient(gray, skyblue);
+  background: -moz-linear-gradient(gray, skyblue);
+  background: linear-gradient(gray, skyblue);
+  height: 110px;
+  overflow: hidden;
+}
+
+img.aside {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 5 5 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+/* ======================Footer====================== */
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: inherit;
+  background-color: azure;
+  color: #0d0d0d;
+  clear: both;
+  padding: 3px;
+}
+
+footer h4.warning {
+  text-align: right;
+  margin-left: 5px;
+}
+
+</style>
