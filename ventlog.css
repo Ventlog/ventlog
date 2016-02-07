@@ -80,7 +80,9 @@ a.menu:visited {
   color: black;
 }
 
-a.menu:active,
+a.menu:active{
+  color: aliceblue;
+}
 a.menu:hover {
   color: red;
 }
@@ -126,13 +128,14 @@ nav ul {
 }
 
 nav ul li {
-  color: rgba(50,50,50,.75);
   width: auto;
   padding: 1px;;
   display: inline-block;
   border-style: solid;
   background-color: skyblue;
 }
+
+
 
 #current_page {
   color: black;
