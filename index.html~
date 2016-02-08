@@ -19,9 +19,15 @@
         </div>
         <div class="menu">
           <ul class="menu">
+<<<<<<< HEAD
+            <li><a href="">Edit my profile</a></li>
+            <li>|</li>
+            <li><a href="">Logout</a></li>
+=======
             <li><a class="menu" href="">Edit my profile</a></li>
             <li>|</li>
             <li><a class="menu" href="">Logout</a></li>
+>>>>>>> master
           </ul>
         </div>
       </div>
@@ -55,7 +61,11 @@
           <div class="post">
             <img class="profilepicture" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
             <p>Username</p>
+<<<<<<< HEAD
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
+=======
+            <p>Lorem <a class="brutal" href="">Hover Me</a> ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
+>>>>>>> master
           </div>
           <div class="post">
             <img class="profilepicture" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
@@ -115,4 +125,8 @@
   </div>
 </body>
 
+<<<<<<< HEAD
 </html>
+=======
+</html>
+>>>>>>> master

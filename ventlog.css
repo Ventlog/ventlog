@@ -15,8 +15,6 @@ body {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
 a:link, a:visited {
   text-decoration: none;
   color: yellow;
@@ -27,7 +25,6 @@ a:active, a:hovered {
   color: orange;
 }
 
->>>>>>> master
 
 /* ======================Header CSS====================== */
 
@@ -88,19 +85,7 @@ div.menu ul li {
 
 a.menu:link,
 a.menu:visited {
-<<<<<<< HEAD
-  color: black;
-}
-
-a.menu:active {
-  color: aliceblue;
-}
-
-a.menu:hover {
   color: red;
-=======
-  color: red;
-  text-decoration: none;
 }
 
 a.menu:active {
@@ -111,7 +96,6 @@ a.menu:active {
 a.menu:hover {
   color: blue;
   text-decoration: underline;
->>>>>>> master
 }
 
 
@@ -219,8 +203,6 @@ article p {
 
 div.profilepix {}
 
-<<<<<<< HEAD
-=======
 a.brutal {
   background-color: none;
   -webkit-transition-property: background-color color;
@@ -241,7 +223,6 @@ a.brutal:hover, a.brutal:active {
   background-color: blue;
   background-radius: 15px;
 }
->>>>>>> master
 
 /* ======================Aside====================== */
 
