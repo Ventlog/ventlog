@@ -78,9 +78,10 @@ a.menu:visited {
   color: black;
 }
 
-a.menu:active{
+a.menu:active {
   color: aliceblue;
 }
+
 a.menu:hover {
   color: red;
 }
@@ -127,18 +128,18 @@ nav ul {
 
 nav ul li {
   width: auto;
-  padding: 1px;;
+  padding: 1px;
+  ;
   display: inline-block;
   border-style: solid;
   background-color: skyblue;
 }
 
-
-
 #current_page {
   color: black;
   background-color: royalblue;
 }
+
 
 /* ======================Main ====================== */
 
@@ -232,6 +233,7 @@ img.aside {
   margin-right: 5px;
 }
 
+
 /* ======================Footer====================== */
 
 footer {
@@ -239,6 +241,11 @@ footer {
   bottom: 0;
   width: inherit;
   background-color: azure;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(gray, skyblue);
+  background: -o-linear-gradient(gray, skyblue);
+  background: -moz-linear-gradient(gray, skyblue);
+  background: linear-gradient(gray, skyblue);
   color: #0d0d0d;
   clear: both;
   padding: 3px;
@@ -251,6 +258,10 @@ button.footer {
   margin-left: 20px;
   margin-top: 20px;
   width: 100px;
+  background: -webkit-linear-gradient(gray, skyblue);
+  background: -o-linear-gradient(gray, skyblue);
+  background: -moz-linear-gradient(gray, skyblue);
+  background: linear-gradient(gray, skyblue);
 }
 
 footer h4.warning {
