@@ -129,7 +129,6 @@ nav ul {
 nav ul li {
   width: auto;
   padding: 1px;
-  ;
   display: inline-block;
   border-style: solid;
   background-color: skyblue;
@@ -148,6 +147,8 @@ main {
   margin-top: 6.5em;
   margin-bottom: 4em;
   overflow-y: scroll;
+  margin-left: .6em;
+  border-radius: 10px;
 }
 
 
@@ -194,16 +195,17 @@ div.profilepix {}
 /* ======================Aside====================== */
 
 #aside {
-  background-color: skyblue;
+  #background-color: skyblue;
   float: left;
   width: 35%;
-  margin-left: ;
+  height: 100%;
   margin-right: 0px;
   padding: 5px;
-  margin-top: 10px;
-  border: 1px solid black;
+  margin-top: 4em;
+  margin-bottom: 4.5em;
+  #border: 1px solid black;
   border-radius: 15px;
-  height: inherit;
+
 }
 
 div.asideContent {
@@ -218,7 +220,6 @@ div.asideContent {
   background: -o-linear-gradient(gray, skyblue);
   background: -moz-linear-gradient(gray, skyblue);
   background: linear-gradient(gray, skyblue);
-  height: 110px;
   overflow: hidden;
 }
 
