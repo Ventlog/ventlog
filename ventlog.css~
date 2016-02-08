@@ -204,26 +204,6 @@ article p {
 
 div.profilepix {}
 
-a.brutal {
-  background-color: none;
-  -webkit-transition-property: background-color color;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-delay: 0s;
-  transition-property: background-color color;
-  transition-duration: 2s;
-  transition-delay: 0s;
-}
-
-a.brutal:link, a.brutal:visited	{
-  color: skyblue;
-  background-color: none;
-}
-
-a.brutal:hover, a.brutal:active {
-  color: red;
-  background-color: blue;
-  background-radius: 15px;
-}
 
 /* ======================Aside====================== */
 
