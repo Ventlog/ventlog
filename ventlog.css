@@ -20,16 +20,14 @@ body {
 
 header {
   background-color: azure;
-  #background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  #border-radius: 5px;
+  border-radius: 5px;
   color: dimgray;
   text-align: center;
   padding: 5px;
   width: inherit;
-  height: 100px;
+  height: 6.5em;
+  position: fixed;
+  top: 0;
 }
 
 .gradient {
@@ -146,6 +144,9 @@ nav ul li {
 
 main {
   display: inline-block;
+  margin-top: 6.5em;
+  margin-bottom: 4em;
+  overflow-y: scroll;
 }
 
 
@@ -234,13 +235,22 @@ img.aside {
 /* ======================Footer====================== */
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: inherit;
   background-color: azure;
   color: #0d0d0d;
   clear: both;
   padding: 3px;
+  height: 4em;
+}
+
+button.footer {
+  float: left;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 100px;
 }
 
 footer h4.warning {
