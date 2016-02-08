@@ -15,8 +15,6 @@ body {
   margin: 0 auto;
 }
 
-<<<<<<< HEAD
-=======
 a:link, a:visited {
   text-decoration: none;
   color: yellow;
@@ -27,7 +25,6 @@ a:active, a:hovered {
   color: orange;
 }
 
->>>>>>> master
 
 /* ======================Header CSS====================== */
 
@@ -88,17 +85,6 @@ div.menu ul li {
 
 a.menu:link,
 a.menu:visited {
-<<<<<<< HEAD
-  color: black;
-}
-
-a.menu:active {
-  color: aliceblue;
-}
-
-a.menu:hover {
-  color: red;
-=======
   color: red;
   text-decoration: none;
 }
@@ -111,7 +97,6 @@ a.menu:active {
 a.menu:hover {
   color: blue;
   text-decoration: underline;
->>>>>>> master
 }
 
 
@@ -219,29 +204,6 @@ article p {
 
 div.profilepix {}
 
-<<<<<<< HEAD
-=======
-a.brutal {
-  background-color: none;
-  -webkit-transition-property: background-color color;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-delay: 0s;
-  transition-property: background-color color;
-  transition-duration: 2s;
-  transition-delay: 0s;
-}
-
-a.brutal:link, a.brutal:visited	{
-  color: skyblue;
-  background-color: none;
-}
-
-a.brutal:hover, a.brutal:active {
-  color: red;
-  background-color: blue;
-  background-radius: 15px;
-}
->>>>>>> master
 
 /* ======================Aside====================== */
 
@@ -310,12 +272,6 @@ button.footer {
   margin-left: 20px;
   margin-top: 20px;
   width: 100px;
-<<<<<<< HEAD
-  background: -webkit-linear-gradient(gray, skyblue);
-  background: -o-linear-gradient(gray, skyblue);
-  background: -moz-linear-gradient(gray, skyblue);
-  background: linear-gradient(gray, skyblue);
-=======
   background: -webkit-linear-gradient(black, skyblue);
   background: -o-linear-gradient(black, skyblue);
   background: -moz-linear-gradient(black, skyblue);
@@ -331,7 +287,6 @@ button:hover {
 
 button:active {
   background-color: gray;
->>>>>>> master
 }
 
 footer h4.warning {
