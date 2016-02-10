@@ -15,21 +15,29 @@ body {
   margin: 0 auto;
 }
 
+a:link, a:visited {
+  text-decoration: none;
+  color: yellow;
+}
+
+a:active, a:hovered {
+  text-decoration: underline;
+  color: orange;
+}
+
 
 /* ======================Header CSS====================== */
 
 header {
   background-color: azure;
-  #background-image: url("http://s12.postimg.org/vytt0upm5/header.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  #border-radius: 5px;
+  border-radius: 5px;
   color: dimgray;
   text-align: center;
   padding: 5px;
   width: inherit;
-  height: 100px;
+  height: 6.5em;
+  position: fixed;
+  top: 0;
 }
 
 .gradient {
@@ -41,7 +49,7 @@ header {
 }
 
 
-/* ======================Logo====================== */
+/* ======================TOP====================== */
 
 div.top {
   display: block;
@@ -77,12 +85,18 @@ div.menu ul li {
 
 a.menu:link,
 a.menu:visited {
-  color: black;
+  color: red;
+  text-decoration: none;
 }
 
-a.menu:active,
+a.menu:active {
+  color: blue;
+  text-decoration: underline;
+}
+
 a.menu:hover {
-  color: red;
+  color: blue;
+  text-decoration: underline;
 }
 
 
@@ -99,7 +113,7 @@ a.tagline:link,
 a.tagline:visited,
 a.tagline:active,
 a.tagline:hover {
-  color: antiquewhite;
+  color: skyblue;
   text-decoration: none;
 }
 
@@ -108,32 +122,34 @@ a.tagline:hover {
 
 div.nav {
   margin: auto;
+  clear: right;
+  width: 50%;
+  height: 50%;
+  margin-top: 60px;
 }
 
 nav {
-  line-height: 30px;
-  #background-color: palegreen;
-  #background-color: palegreen;
-  #background-image: url("http://s16.postimg.org/5l1ox2z8l/header.jpg");
-  #background-repeat: no-repeat;
-  #background-position: center;
-  #background-size: fill;
-  height: 50px;
-  width: inherit;
-  padding: 5px;
+  line-height: 15px;
+  width: 100%;
+  padding: 1px;
 }
 
 nav ul {
   display: inline-block;
+  color: aliceblue;
 }
 
 nav ul li {
-  color: black;
   width: auto;
-  padding: inherit;
+  padding: 1px;
   display: inline-block;
   border-style: solid;
-  background-color: antiquewhite;
+  background-color: skyblue;
+}
+
+#current_page {
+  color: black;
+  background-color: royalblue;
 }
 
 
@@ -141,6 +157,11 @@ nav ul li {
 
 main {
   display: inline-block;
+  margin-top: 6.5em;
+  margin-bottom: 4em;
+  overflow-y: scroll;
+  margin-left: .6em;
+  border-radius: 10px;
 }
 
 
@@ -183,45 +204,109 @@ article p {
 
 div.profilepix {}
 
+a.brutal {
+  background-color: none;
+  -webkit-transition-property: background-color color;
+  -webkit-transition-duration: 2s;
+  -webkit-transition-delay: 0s;
+  transition-property: background-color color;
+  transition-duration: 2s;
+  transition-delay: 0s;
+}
+
+a.brutal:link, a.brutal:visited	{
+  color: skyblue;
+  background-color: none;
+}
+
+a.brutal:hover, a.brutal:active {
+  color: red;
+  background-color: blue;
+  background-radius: 15px;
+}
 
 /* ======================Aside====================== */
 
 #aside {
-  background-color: skyblue;
+  #background-color: skyblue;
   float: left;
   width: 35%;
-  margin-left: ;
+  height: 100%;
   margin-right: 0px;
   padding: 5px;
-  margin-top: 10px;
-  border: 1px solid black;
+  margin-top: 4em;
+  margin-bottom: 4.5em;
+  #border: 1px solid black;
   border-radius: 15px;
-  height: inherit;
+
 }
 
 div.asideContent {
   background-color: skyblue;
   padding: 5px;
   margin: 5px;
+  border: 1px solid black;
+  border-style: double solid dotted;
   border-radius: 10px;
   background: skyblue;
-  background: -webkit-linear-gradient(skyblue, gray);
-  background: -o-linear-gradient(skyblue, gray);
-  background: -moz-linear-gradient(skyblue, gray);
-  background: linear-gradient(skyblue, gray);
+  background: -webkit-linear-gradient(gray, skyblue);
+  background: -o-linear-gradient(gray, skyblue);
+  background: -moz-linear-gradient(gray, skyblue);
+  background: linear-gradient(gray, skyblue);
+  overflow: hidden;
+}
+
+img.aside {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin: 5 5 10px 10px;
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 5px;
+  margin-right: 5px;
 }
 
 
 /* ======================Footer====================== */
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: inherit;
   background-color: azure;
+  border-radius: 10px;
+  background: -webkit-linear-gradient(gray, skyblue);
+  background: -o-linear-gradient(gray, skyblue);
+  background: -moz-linear-gradient(gray, skyblue);
+  background: linear-gradient(gray, skyblue);
   color: #0d0d0d;
   clear: both;
   padding: 3px;
+  height: 4em;
+}
+
+button.footer {
+  float: left;
+  text-align: center;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 100px;
+  background: -webkit-linear-gradient(black, skyblue);
+  background: -o-linear-gradient(black, skyblue);
+  background: -moz-linear-gradient(black, skyblue);
+  background: linear-gradient(black, skyblue);
+}
+
+button:hover {
+  background: -webkit-linear-gradient(skyblue, black);
+  background: -o-linear-gradient(skyblue, black);
+  background: -moz-linear-gradient(skyblue, black);
+  background: linear-gradient(skyblue, black);
+}
+
+button:active {
+  background-color: gray;
 }
 
 footer h4.warning {

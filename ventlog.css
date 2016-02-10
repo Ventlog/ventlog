@@ -15,14 +15,53 @@ body {
   margin: 0 auto;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: yellow;
 }
 
-a:active, a:hovered {
+a:active,
+a:hovered {
   text-decoration: underline;
   color: orange;
+}
+
+
+/* ====================Responsive CSS==================== */
+
+@media screen and (max-width:768px) {
+  #wrap {
+    width: auto;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  footer h4.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
+    clear: both;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  #wrap {
+    width: auto;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  footer h4.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
+    clear: both;
+  }
 }
 
 
@@ -213,16 +252,19 @@ a.brutal {
   transition-delay: 0s;
 }
 
-a.brutal:link, a.brutal:visited	{
+a.brutal:link,
+a.brutal:visited {
   color: skyblue;
   background-color: none;
 }
 
-a.brutal:hover, a.brutal:active {
+a.brutal:hover,
+a.brutal:active {
   color: red;
   background-color: blue;
   background-radius: 15px;
 }
+
 
 /* ======================Aside====================== */
 
@@ -237,7 +279,6 @@ a.brutal:hover, a.brutal:active {
   margin-bottom: 4.5em;
   #border: 1px solid black;
   border-radius: 15px;
-
 }
 
 div.asideContent {
@@ -291,12 +332,6 @@ button.footer {
   margin-left: 20px;
   margin-top: 20px;
   width: 100px;
-<<<<<<< HEAD
-  background: -webkit-linear-gradient(gray, skyblue);
-  background: -o-linear-gradient(gray, skyblue);
-  background: -moz-linear-gradient(gray, skyblue);
-  background: linear-gradient(gray, skyblue);
-=======
   background: -webkit-linear-gradient(black, skyblue);
   background: -o-linear-gradient(black, skyblue);
   background: -moz-linear-gradient(black, skyblue);
@@ -312,7 +347,6 @@ button:hover {
 
 button:active {
   background-color: gray;
->>>>>>> master
 }
 
 footer h4.warning {
