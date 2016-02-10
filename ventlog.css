@@ -271,29 +271,18 @@ img.aside {
   margin-right: 5px;
 }
 
-/* ===============Section==================================================== */
+
+/* ===============Section=================================================== */
 
 #section {
-  #background-color: skyblue;
   float: left;
   width: 35%;
   height: 100%;
   margin-right: 0px;
   padding: 5px;
+  margin-top: 0px;
   margin-bottom: 4.5em;
-  #border: 1px solid black;
   border-radius: 15px;
-}
-
-img.aside {
-  float: left;
-  height: 50px;
-  width: 50px;
-  margin: 5 5 10px 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  margin-right: 5px;
 }
 
 
@@ -348,42 +337,24 @@ footer h4.warning {
    ===============Responsive CSS=============================================== 
    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
-@media screen and (max-width:768px) {
-  /* ===============Width Wrap============================================== */
-  #wrap {
-    width: auto;
-    float: left;
-    margin: 15 auto;
 
-  }
-  /* ===============h4 Warning============================================== */
-  footer h4.warning {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-right: 5px;
-    clear: both;
-  }
-}
+/* ===============Medium Screens============================================ */
 
 @media screen and (min-width:768px) and (max-width:992px) {
   /* ===============Width Wrap============================================== */
   #wrap {
     width: 768px;
     margin: 15 auto;
-
   }
-  /* ===============h4 Warning============================================== */
-  footer h4.warning {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-right: 5px;
-    clear: both;
+  #aside {
+    margin-top: 0px;
+    width: 48.5%;
   }
-  /* ===============Header================================================= */
+  #section {
+    margin-top: 0px;
+    width: 48.5%;
+  }
+  /* ===============Header================================================== */
   header {
     clear: both;
     background-color: azure;
@@ -401,6 +372,45 @@ footer h4.warning {
     width: auto;
   }
   #aside {
+    clear: both;
+  }
+}
+
+
+/* ===============Small Screens============================================= */
+
+@media screen and (max-width:768px) {
+  /* ===============Width Wrap============================================== */
+  #wrap {
+    width: auto;
+    margin: 15 auto;
+  }
+  #article {
+    width: 100%;
+    margin-right: 15px;
+    margin-left: -5px;
+  }
+  article {
+    margin: 0 auto;
+    width: 97%;
+  }
+  #aside {
+    margin-top: 0px;
+    margin-left: -5px;
+    width: 98%;
+  }
+  #section {
+    margin-top: 0px;
+    margin-left: -5px;
+    width: 98%;
+  }
+  /* ===============h4 Warning============================================== */
+  footer h4.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
     clear: both;
   }
 }
