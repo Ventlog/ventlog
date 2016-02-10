@@ -1,4 +1,9 @@
 <style>
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ===============Normal CSS=================================================== 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
 /* ===============Default body CSS========================================== */
 
 body {
@@ -26,54 +31,6 @@ a:hovered {
   text-decoration: underline;
   color: orange;
 }
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ===============Responsive CSS=============================================== 
-   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-@media screen and (max-width:768px) {
-  /* ===============Width Wrap============================================== */
-  #wrap {
-    width: auto;
-    float: left;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  /* ===============h4 Warning============================================== */
-  footer h4.warning {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-right: 5px;
-    clear: both;
-  }
-}
-
-@media screen and (min-width:768px) and (max-width:992px) {
-  /* ===============Width Wrap============================================== */
-  #wrap {
-    width: auto;
-    float: left;
-    margin-left: 15px;
-    margin-right: 15px;
-  }
-  /* ===============h4 Warning============================================== */
-  footer h4.warning {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-right: 5px;
-    clear: both;
-  }
-}
-
-
-/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ===============Normal CSS=================================================== 
-   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
 /* ===============Header CSS================================================ */
@@ -363,6 +320,70 @@ button:active {
 footer h4.warning {
   text-align: right;
   margin-left: 5px;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ===============Responsive CSS=============================================== 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+@media screen and (max-width:768px) {
+  /* ===============Width Wrap============================================== */
+  #wrap {
+    width: auto;
+    float: left;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* ===============h4 Warning============================================== */
+  footer h4.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
+    clear: both;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  /* ===============Width Wrap============================================== */
+  #wrap {
+    width: 768px;
+    margin: 0 auto;
+    margin-left: 15px;
+    margin-right: 15px;
+  }
+  /* ===============h4 Warning============================================== */
+  footer h4.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
+    clear: both;
+  }
+  /* ===============Header================================================= */
+  header {
+    clear: both;
+    background-color: azure;
+    border-radius: 5px;
+    color: dimgray;
+    text-align: center;
+    padding: 5px;
+    width: 768px;
+    height: 6.5em;
+    position: fixed;
+    top: 0;
+  }
+  #article {
+    clear: both;
+    width: auto;
+  }
+  #aside {
+    clear: both;
+  }
 }
 
 </style>
