@@ -173,14 +173,14 @@ main {
 /* ===============Article ================================================== */
 
 #article {
-  width: 60%;
+  width: 70%;
   float: left;
   margin-right: 3%;
 }
 
 article {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 
 div.post {
@@ -235,8 +235,8 @@ a.brutal:active {
 /* ===============Aside===================================================== */
 
 #aside {
-  float: left;
-  width: 35%;
+  float: right;
+  width: 25%;
   height: 100%;
   margin-right: 0px;
   padding: 5px;
@@ -275,12 +275,14 @@ img.aside {
 /* ===============Section=================================================== */
 
 #section {
-  float: left;
-  width: 35%;
+  clear: right;
+  float: right;
+  width: 25%;
   height: 100%;
   margin-right: 0px;
   padding: 5px;
-  margin-top: 0px;
+  top: 0;
+  margin-top: -50px;
   margin-bottom: 4.5em;
   border-radius: 15px;
 }
@@ -346,13 +348,21 @@ footer h4.warning {
     width: 768px;
     margin: 15 auto;
   }
+  #article {
+    clear: both;
+    width: auto;
+  }
   #aside {
     margin-top: 0px;
     width: 48.5%;
+    float: left;
   }
   #section {
     margin-top: 0px;
+    margin-left: -10px;
     width: 48.5%;
+    float: left;
+    
   }
   /* ===============Header================================================== */
   header {
@@ -366,13 +376,6 @@ footer h4.warning {
     height: 6.5em;
     position: fixed;
     top: 0;
-  }
-  #article {
-    clear: both;
-    width: auto;
-  }
-  #aside {
-    clear: both;
   }
 }
 
