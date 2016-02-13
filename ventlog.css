@@ -43,7 +43,7 @@ header {
   padding: 5px;
   width: inherit;
   height: 6.5em;
-  position: fixed;
+  #position: fixed;
   top: 0;
 }
 
@@ -291,7 +291,7 @@ img.aside {
 /* ===============Footer==================================================== */
 
 footer {
-  position: fixed;
+  #position: fixed;
   bottom: 0;
   width: inherit;
   background-color: azure;
@@ -409,7 +409,7 @@ footer h4.warning {
   }
   /* ===============h4 Warning============================================== */
   footer h4.warning {
-    position: fixed;
+    #position: fixed;
     bottom: 0;
     right: 0;
     text-align: right;
