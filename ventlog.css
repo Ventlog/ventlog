@@ -43,7 +43,7 @@ header {
   padding: 5px;
   width: inherit;
   height: 6.5em;
-  #position: fixed;
+  position: fixed;
   top: 0;
 }
 
@@ -291,7 +291,7 @@ img.aside {
 /* ===============Footer==================================================== */
 
 footer {
-  #position: fixed;
+  position: fixed;
   bottom: 0;
   width: inherit;
   background-color: azure;
@@ -362,7 +362,6 @@ footer h4.warning {
     margin-left: -10px;
     width: 48.5%;
     float: left;
-    
   }
   /* ===============Header================================================== */
   header {
@@ -388,6 +387,17 @@ footer h4.warning {
     width: auto;
     margin: 15 auto;
   }
+  header {
+    width: 100%;
+  }
+  div.logo {
+    display: inline-block;
+    float: left;
+  }
+  img.logo {
+    margin: 5 5 10px 10px;
+    height: 75px
+  }
   #article {
     width: 100%;
     margin-right: 15px;
@@ -406,6 +416,11 @@ footer h4.warning {
     margin-top: 0px;
     margin-left: -5px;
     width: 98%;
+  }
+  footer {
+    position: relative;
+    float: right;
+    width: 100%;
   }
   /* ===============h4 Warning============================================== */
   footer h4.warning {
