@@ -36,6 +36,7 @@ a:hovered {
 /* ===============Header CSS================================================ */
 
 header {
+  display: flex;
   background-color: azure;
   border-radius: 5px;
   color: dimgray;
@@ -45,7 +46,8 @@ header {
   height: 6.5em;
   position: fixed;
   top: 0;
-  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
 }
 
 .gradient {
@@ -67,8 +69,7 @@ div.top {
 /* ===============Logo====================================================== */
 
 div.logo {
-  display: inline-block;
-  float: left;
+
 }
 
 img.logo {
@@ -80,7 +81,7 @@ img.logo {
 /* ===============Menu====================================================== */
 
 div.menu {
-  float: right;
+
 }
 
 div.menu ul li {}
@@ -108,10 +109,6 @@ a.menu:hover {
 /* ===============Tagline=================================================== */
 
 div.tagline {
-  clear: both;
-  display: block;
-  margin-left: 5px;
-  float: left;
 }
 
 a.tagline:link,
@@ -126,11 +123,7 @@ a.tagline:hover {
 /* ===============Nav======================================================= */
 
 div.nav {
-  margin: auto;
-  clear: right;
-  width: 50%;
-  height: 50%;
-  margin-top: 60px;
+
 }
 
 nav {
