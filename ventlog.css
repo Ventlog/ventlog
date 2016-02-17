@@ -45,6 +45,7 @@ header {
   height: 6.5em;
   position: fixed;
   top: 0;
+  display: flex;
 }
 
 .gradient {
@@ -59,8 +60,7 @@ header {
 /* ===============TOP======================================================= */
 
 div.top {
-  display: block;
-  float: none;
+
 }
 
 
