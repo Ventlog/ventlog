@@ -1,331 +1,323 @@
 <style>
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-   ===============Normal CSS=================================================== 
-   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
-
-
-/* ===============Default body CSS========================================== */
-
-body {
-  background-color: #E5E4E2;
-  color: black;
-  padding: 0px;
-  width: 992px;
-  margin: 0 auto;
-}
-
-#wrap {
-  width: 992px;
-  max-width: 992px;
-  margin: 0 auto;
-}
-
-a:link,
-a:visited {
-  text-decoration: none;
-  color: yellow;
-}
-
-a:active,
-a:hovered {
-  text-decoration: underline;
-  color: orange;
-}
-
-
-/* ===============Header CSS================================================ */
-
-header {
-  display: flex;
-  background-color: azure;
-  border-radius: 5px;
-  color: dimgray;
-  text-align: center;
-  padding: 5px;
-  width: inherit;
-  height: 6.5em;
-  position: fixed;
-  top: 0;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-
-.gradient {
-  background: azure;
-  background: -webkit-linear-gradient(top, skyblue, skyblue, skyblue, black);
-  background: -o-linear-gradient(top, skyblue, skyblue, skyblue, black);
-  background: -moz-linear-gradient(top, skyblue, skyblue, skyblue, black);
-  background: linear-gradient(top, skyblue, skyblue, skyblue, black);
-}
-
-
-/* ===============TOP======================================================= */
-
-div.top {
-
-}
-
-
-/* ===============Logo====================================================== */
-
-div.logo {
-
-}
-
-img.logo {
-  margin: 5 5 10px 10px;
-  height: 75px
-}
-
-
-/* ===============Menu====================================================== */
-
-div.menu {
-
-}
-
-div.menu ul li {}
-
-div.menu ul li {
-  display: inline;
-}
-
-a.menu:link,
-a.menu:visited {
-  color: red;
-}
-
-a.menu:active {
-  color: blue;
-  text-decoration: underline;
-}
-
-a.menu:hover {
-  color: blue;
-  text-decoration: underline;
-}
-
-
-/* ===============Tagline=================================================== */
-
-div.tagline {
-}
-
-a.tagline:link,
-a.tagline:visited,
-a.tagline:active,
-a.tagline:hover {
-  color: skyblue;
-  text-decoration: none;
-}
-
-
-/* ===============Nav======================================================= */
-
-div.nav {
-
-}
-
-nav {
-  line-height: 15px;
-  width: 100%;
-  padding: 1px;
-}
-
-nav ul {
-  display: inline-block;
-  color: aliceblue;
-}
-
-nav ul li {
-  width: auto;
-  padding: 1px;
-  display: inline-block;
-  border-style: solid;
-  background-color: skyblue;
-}
-
-#current_page {
-  color: black;
-  background-color: royalblue;
-}
-
-
-/* ===============Main ===================================================== */
-
-main {
-  display: inline-block;
-  margin-top: 6.5em;
-  margin-bottom: 4em;
-  overflow-y: scroll;
-  margin-left: .6em;
-  border-radius: 10px;
-}
-
-
-/* ===============Article ================================================== */
-
-#article {
-  width: 70%;
-  float: left;
-  margin-right: 3%;
-}
-
-article {
-  width: 100%;
-  padding: 5px;
-}
-
-div.post {
-  padding: 5px;
-  border-bottom-color: skyblue;
-  border-left-color: skyblue;
-  border-style: outset;
-  border-radius: 15px;
-}
-
-article img {
-  float: left;
-  height: 100px;
-  width: 100px;
-  margin: 5 5 10px 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  margin-right: 5px;
-}
-
-article p {
-  padding: 5px;
-  margin-left: 5px;
-}
-
-div.profilepix {}
-
-a.brutal {
-  background-color: none;
-  -webkit-transition-property: background-color color;
-  -webkit-transition-duration: 2s;
-  -webkit-transition-delay: 0s;
-  transition-property: background-color color;
-  transition-duration: 2s;
-  transition-delay: 0s;
-}
-
-a.brutal:link,
-a.brutal:visited {
-  color: skyblue;
-  background-color: none;
-}
-
-a.brutal:hover,
-a.brutal:active {
-  color: red;
-  background-color: blue;
-}
-
-
-/* ===============Aside===================================================== */
-
-#aside {
-  float: right;
-  width: 25%;
-  height: 100%;
-  margin-right: 0px;
-  padding: 5px;
-  margin-top: 4em;
-  margin-bottom: 4.5em;
-  border-radius: 15px;
-}
-
-div.content {
-  background-color: skyblue;
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid black;
-  border-style: double solid dotted;
-  border-radius: 10px;
-  background: skyblue;
-  background: -webkit-linear-gradient(gray, skyblue);
-  background: -o-linear-gradient(gray, skyblue);
-  background: -moz-linear-gradient(gray, skyblue);
-  background: linear-gradient(gray, skyblue);
-  overflow: hidden;
-}
-
-img.aside {
-  float: left;
-  height: 50px;
-  width: 50px;
-  margin: 5 5 10px 10px;
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 5px;
-  margin-right: 5px;
-}
-
-
-/* ===============Section=================================================== */
-
-#section {
-  clear: right;
-  float: right;
-  width: 25%;
-  height: 100%;
-  margin-right: 0px;
-  padding: 5px;
-  top: 0;
-  margin-top: -50px;
-  margin-bottom: 4.5em;
-  border-radius: 15px;
-}
-
-
-/* ===============Footer==================================================== */
-
-footer {
-  position: fixed;
-  bottom: 0;
-  width: inherit;
-  background-color: azure;
-  border-radius: 10px;
-  background: -webkit-linear-gradient(gray, skyblue);
-  background: -o-linear-gradient(gray, skyblue);
-  background: -moz-linear-gradient(gray, skyblue);
-  background: linear-gradient(gray, skyblue);
-  color: #0d0d0d;
-  clear: both;
-  padding: 3px;
-  height: 4em;
-}
-
-button.footer {
-  float: left;
-  text-align: center;
-  margin-left: 20px;
-  margin-top: 20px;
-  width: 100px;
-  background: -webkit-linear-gradient(black, skyblue);
-  background: -o-linear-gradient(black, skyblue);
-  background: -moz-linear-gradient(black, skyblue);
-  background: linear-gradient(black, skyblue);
-}
-
-button:hover {
-  background: -webkit-linear-gradient(skyblue, black);
-  background: -o-linear-gradient(skyblue, black);
-  background: -moz-linear-gradient(skyblue, black);
-  background: linear-gradient(skyblue, black);
-}
-
-button:active {
-  background-color: gray;
-}
-
-footer h4.warning {
-  text-align: right;
-  margin-left: 5px;
-}
+	 ===============Normal CSS=================================================== 
+	 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+	 /* ===============Default body CSS========================================== */
+
+	 body {
+	 	background-color: #E5E4E2;
+	 	color: black;
+	 	padding: 0px;
+	 	width: 992px;
+	 	margin: 0 auto;
+	 }
+
+	 #wrap {
+	 	width: 992px;
+	 	max-width: 992px;
+	 	margin: 0 auto;
+	 }
+
+	 a:link,
+	 a:visited {
+	 	text-decoration: none;
+	 	color: yellow;
+	 }
+
+	 a:active,
+	 a:hovered {
+	 	text-decoration: underline;
+	 	color: orange;
+	 }
+
+
+	 /* ===============Header CSS================================================ */
+
+	 header {
+	 	display: flex;
+	 	background-color: azure;
+	 	border-radius: 5px;
+	 	color: dimgray;
+	 	text-align: center;
+	 	padding: 5px;
+	 	width: inherit;
+	 	height: 6.5em;
+	 	position: fixed;
+	 	top: 0;
+	 	flex-flow: column wrap;
+	 }
+
+	 .gradient {
+	 	background: azure;
+	 	background: -webkit-linear-gradient(top, skyblue, skyblue, skyblue, black);
+	 	background: -o-linear-gradient(top, skyblue, skyblue, skyblue, black);
+	 	background: -moz-linear-gradient(top, skyblue, skyblue, skyblue, black);
+	 	background: linear-gradient(top, skyblue, skyblue, skyblue, black);
+	 }
+
+	 /* ===============Logo====================================================== */
+
+	 div.logo {
+	 	order: 1;
+	 }
+
+	 img.logo {
+	 	margin: 5 5 10px 10px;
+	 	height: 75px
+	 }
+
+
+	 /* ===============Menu====================================================== */
+
+	 div.menu {
+	 	order: 4;
+	 }
+
+	 div.menu ul li {}
+
+	 div.menu ul li {
+	 	display: inline;
+	 }
+
+	 a.menu:link,
+	 a.menu:visited {
+	 	color: red;
+	 }
+
+	 a.menu:active {
+	 	color: blue;
+	 	text-decoration: underline;
+	 }
+
+	 a.menu:hover {
+	 	color: blue;
+	 	text-decoration: underline;
+	 }
+
+
+	 /* ===============Tagline=================================================== */
+
+	 div.tagline {
+	 	order: 2;
+	 }
+
+	 a.tagline:link,
+	 a.tagline:visited,
+	 a.tagline:active,
+	 a.tagline:hover {
+	 	color: black;
+	 	text-decoration: none;
+	 }
+
+
+	 /* ===============Nav======================================================= */
+
+	 div.nav {
+	 	order: 3;
+	 }
+
+	 nav {
+	 	line-height: 15px;
+	 	width: 100%;
+	 	padding: 1px;
+	 }
+
+	 nav ul {
+	 	display: inline-block;
+	 	color: aliceblue;
+	 }
+
+	 nav ul li {
+	 	width: auto;
+	 	padding: 1px;
+	 	display: inline-block;
+	 	border-style: solid;
+	 	background-color: skyblue;
+	 }
+
+	 #current_page {
+	 	color: black;
+	 	background-color: royalblue;
+	 }
+
+
+	 /* ===============Main ===================================================== */
+
+	 main {
+	 	display: inline-block;
+	 	margin-top: 6.5em;
+	 	margin-bottom: 4em;
+	 	overflow-y: scroll;
+	 	margin-left: .6em;
+	 	border-radius: 10px;
+	 }
+
+
+	 /* ===============Article ================================================== */
+
+	 #article {
+	 	width: 70%;
+	 	float: left;
+	 	margin-right: 3%;
+	 }
+
+	 article {
+	 	width: 100%;
+	 	padding: 5px;
+	 }
+
+	 div.post {
+	 	padding: 5px;
+	 	border-bottom-color: skyblue;
+	 	border-left-color: skyblue;
+	 	border-style: outset;
+	 	border-radius: 15px;
+	 }
+
+	 article img {
+	 	float: left;
+	 	height: 100px;
+	 	width: 100px;
+	 	margin: 5 5 10px 10px;
+	 	border: 1px solid black;
+	 	border-radius: 10px;
+	 	padding: 5px;
+	 	margin-right: 5px;
+	 }
+
+	 article p {
+	 	padding: 5px;
+	 	margin-left: 5px;
+	 }
+
+	 div.profilepix {}
+
+	 a.brutal {
+	 	background-color: none;
+	 	-webkit-transition-property: background-color color;
+	 	-webkit-transition-duration: 2s;
+	 	-webkit-transition-delay: 0s;
+	 	transition-property: background-color color;
+	 	transition-duration: 2s;
+	 	transition-delay: 0s;
+	 }
+
+	 a.brutal:link,
+	 a.brutal:visited {
+	 	color: skyblue;
+	 	background-color: none;
+	 }
+
+	 a.brutal:hover,
+	 a.brutal:active {
+	 	color: red;
+	 	background-color: blue;
+	 }
+
+
+	 /* ===============Aside===================================================== */
+
+	 #aside {
+	 	float: right;
+	 	width: 25%;
+	 	height: 100%;
+	 	margin-right: 0px;
+	 	padding: 5px;
+	 	margin-top: 4em;
+	 	margin-bottom: 4.5em;
+	 	border-radius: 15px;
+	 }
+
+	 div.content {
+	 	background-color: skyblue;
+	 	padding: 5px;
+	 	margin: 5px;
+	 	border: 1px solid black;
+	 	border-style: double solid dotted;
+	 	border-radius: 10px;
+	 	background: skyblue;
+	 	background: -webkit-linear-gradient(gray, skyblue);
+	 	background: -o-linear-gradient(gray, skyblue);
+	 	background: -moz-linear-gradient(gray, skyblue);
+	 	background: linear-gradient(gray, skyblue);
+	 	overflow: hidden;
+	 }
+
+	 img.aside {
+	 	float: left;
+	 	height: 50px;
+	 	width: 50px;
+	 	margin: 5 5 10px 10px;
+	 	border: 1px solid black;
+	 	border-radius: 10px;
+	 	padding: 5px;
+	 	margin-right: 5px;
+	 }
+
+
+	 /* ===============Section=================================================== */
+
+	 #section {
+	 	clear: right;
+	 	float: right;
+	 	width: 25%;
+	 	height: 100%;
+	 	margin-right: 0px;
+	 	padding: 5px;
+	 	top: 0;
+	 	margin-top: -50px;
+	 	margin-bottom: 4.5em;
+	 	border-radius: 15px;
+	 }
+
+
+	 /* ===============Footer==================================================== */
+
+	 footer {
+	 	position: fixed;
+	 	bottom: 0;
+	 	width: inherit;
+	 	background-color: azure;
+	 	border-radius: 10px;
+	 	background: -webkit-linear-gradient(gray, skyblue);
+	 	background: -o-linear-gradient(gray, skyblue);
+	 	background: -moz-linear-gradient(gray, skyblue);
+	 	background: linear-gradient(gray, skyblue);
+	 	color: #0d0d0d;
+	 	clear: both;
+	 	padding: 3px;
+	 	height: 4em;
+	 }
+
+	 button.footer {
+	 	float: left;
+	 	text-align: center;
+	 	margin-left: 20px;
+	 	margin-top: 20px;
+	 	width: 100px;
+	 	background: -webkit-linear-gradient(black, skyblue);
+	 	background: -o-linear-gradient(black, skyblue);
+	 	background: -moz-linear-gradient(black, skyblue);
+	 	background: linear-gradient(black, skyblue);
+	 }
+
+	 button:hover {
+	 	background: -webkit-linear-gradient(skyblue, black);
+	 	background: -o-linear-gradient(skyblue, black);
+	 	background: -moz-linear-gradient(skyblue, black);
+	 	background: linear-gradient(skyblue, black);
+	 }
+
+	 button:active {
+	 	background-color: gray;
+	 }
+
+	 footer h4.warning {
+	 	text-align: right;
+	 	margin-left: 5px;
+	 }
 
 
 /* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -333,82 +325,117 @@ footer h4.warning {
    +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
 
 
-/* ===============Medium Screens============================================ */
+   /* ===============Medium Screens============================================ */
 
-@media screen and (min-width:768px) and (max-width:992px) {
-  /* ===============Width Wrap============================================== */
-  #wrap {
-    width: 768px;
-    margin: 15 auto;
-  }
-  #article {
-    clear: both;
-    width: auto;
-  }
-  #aside {
-    margin-top: 0px;
-    width: 48.5%;
-    float: left;
-  }
-  #section {
-    margin-top: 0px;
-    margin-left: -10px;
-    width: 48.5%;
-    float: left;
-    
-  }
-  /* ===============Header================================================== */
-  header {
-    clear: both;
-    background-color: azure;
-    border-radius: 5px;
-    color: dimgray;
-    text-align: center;
-    padding: 5px;
-    width: 768px;
-    height: 6.5em;
-    position: fixed;
-    top: 0;
-  }
-}
+   @media screen and (min-width:768px) and (max-width:992px) {
+   	/* ===============Width Wrap============================================== */
+   	#wrap {
+   		width: 768px;
+   		margin: 15 auto;
+   	}
+   	#article {
+   		clear: both;
+   		width: auto;
+   	}
+   	#aside {
+   		margin-top: 0px;
+   		width: 48.5%;
+   		float: left;
+   	}
+   	#section {
+   		margin-top: 0px;
+   		margin-left: -10px;
+   		width: 48.5%;
+   		float: left;
+   	}
+   	/* ===============Header================================================== */
+   	header {
+   		clear: both;
+   		background-color: azure;
+   		border-radius: 5px;
+   		color: dimgray;
+   		text-align: center;
+   		padding: 5px;
+   		width: 768px;
+   		height: 6.5em;
+   		position: fixed;
+   		top: 0;
+   	}
+   }
 
 
 /* ===============Small Screens============================================= */
 
-@media screen and (max-width:768px) {
-  /* ===============Width Wrap============================================== */
-  #wrap {
-    width: auto;
-    margin: 15 auto;
-  }
-  #article {
-    width: 100%;
-    margin-right: 15px;
-    margin-left: -5px;
-  }
-  article {
-    margin: 0 auto;
-    width: 97%;
-  }
-  #aside {
-    margin-top: 0px;
-    margin-left: -5px;
-    width: 98%;
-  }
-  #section {
-    margin-top: 0px;
-    margin-left: -5px;
-    width: 98%;
-  }
-  /* ===============h4 Warning============================================== */
-  footer h4.warning {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    text-align: right;
-    margin-right: 5px;
-    clear: both;
-  }
-}
-
-</style>
+   @media screen and (max-width:768px) {
+/* ===============Width Wrap============================================== */
+   	#wrap {
+   		width: auto;
+   		margin: 15 auto;
+   	}
+   	header {
+   		width: 100%;
+      display: flex;
+      flex-flow: column wrap;
+   	}
+   	div.logo {
+   		margin: 0 auto;  		
+   		padding: 0px;   		
+   	}
+   	img.logo {
+   		margin: 0 auto;
+   		height: 50px;
+   		padding: 0px;
+   	}
+   	div.menu {
+   		margin: 0 auto; 		
+   	}
+   	div.nav {
+   		width: 100%;
+   		margin: 0 auto;
+   	}
+   	div.tagline {
+   		
+   		margin-top: -70px;
+   	}
+   	a.tagline:link, a.tagline:visited {
+   		color: black;
+   	}
+   	a.tagline:hover, a.tagline:active {
+   		color: skyblue;
+   		background-color: black
+   	}
+   	#article {
+   		width: 100%;
+   		margin-right: 15px;
+   		margin-left: -5px;
+   	}
+   	article {
+   		margin: 0 auto;
+   		width: 97%;
+   	}
+   	#aside {
+   		margin-top: 0px;
+   		margin-left: -5px;
+   		width: 98%;
+   	}
+   	#section {
+   		margin-top: 0px;
+   		margin-left: -5px;
+   		width: 98%;
+   	}
+   	footer {
+   		position: relative;
+   		float: right;
+   		width: 100%;
+   	}
+   	/* ===============h4 Warning============================================== */
+   	footer h4.warning {
+   		#position: fixed;
+   		bottom: 0;
+   		right: 0;
+   		text-align: right;
+   		margin-right: 5px;
+   		clear: both;
+   	}
+   }
+   </style>
