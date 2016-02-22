@@ -370,7 +370,7 @@
    	}
    	header {
       position: fixed;
-   		width: 100%;
+   		width: 99%;
       height: 40px;
       margin-left: -10px;
       display: flex;
@@ -380,7 +380,6 @@
    	}
    	div.logo { 		
    		padding: 0px;
-
    	}
    	img.logo {
    		margin: 0 auto;
@@ -401,12 +400,15 @@
       align-self: center;
       background-color: black;
       cursor: pointer;
-      position: relative;
-      display: inline-block;
+      margin: 0 auto;
+    }
+    button {
+      align-self: center;
+      background-color: black;
     }
     #nav-button {
       background-color: black;
-      color: skyblue;
+      color: gray;
     }
     #nav-button:hover, #nav-button:focus {
       background-color: gray;
