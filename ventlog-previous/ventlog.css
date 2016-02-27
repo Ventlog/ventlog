@@ -1,5 +1,10 @@
 <style>
-/* ======================Default body CSS====================== */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ===============Normal CSS=================================================== 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ===============Default body CSS========================================== */
 
 body {
   background-color: #E5E4E2;
@@ -15,18 +20,20 @@ body {
   margin: 0 auto;
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
   text-decoration: none;
   color: yellow;
 }
 
-a:active, a:hovered {
+a:active,
+a:hovered {
   text-decoration: underline;
   color: orange;
 }
 
 
-/* ======================Header CSS====================== */
+/* ===============Header CSS================================================ */
 
 header {
   background-color: azure;
@@ -49,7 +56,7 @@ header {
 }
 
 
-/* ======================TOP====================== */
+/* ===============TOP======================================================= */
 
 div.top {
   display: block;
@@ -57,7 +64,7 @@ div.top {
 }
 
 
-/* ======================Logo====================== */
+/* ===============Logo====================================================== */
 
 div.logo {
   display: inline-block;
@@ -70,11 +77,10 @@ img.logo {
 }
 
 
-/* ======================Menu===================== */
+/* ===============Menu====================================================== */
 
 div.menu {
   float: right;
-  #display: inline;
 }
 
 div.menu ul li {}
@@ -86,7 +92,6 @@ div.menu ul li {
 a.menu:link,
 a.menu:visited {
   color: red;
-  text-decoration: none;
 }
 
 a.menu:active {
@@ -100,7 +105,7 @@ a.menu:hover {
 }
 
 
-/* ======================Tagline====================== */
+/* ===============Tagline=================================================== */
 
 div.tagline {
   clear: both;
@@ -118,7 +123,7 @@ a.tagline:hover {
 }
 
 
-/* ======================Nav====================== */
+/* ===============Nav======================================================= */
 
 div.nav {
   margin: auto;
@@ -153,7 +158,7 @@ nav ul li {
 }
 
 
-/* ======================Main ====================== */
+/* ===============Main ===================================================== */
 
 main {
   display: inline-block;
@@ -165,17 +170,17 @@ main {
 }
 
 
-/* ======================Article ====================== */
+/* ===============Article ================================================== */
 
 #article {
-  width: 60%;
+  width: 70%;
   float: left;
   margin-right: 3%;
 }
 
 article {
   width: 100%;
-  padding: 10px;
+  padding: 5px;
 }
 
 div.post {
@@ -214,34 +219,33 @@ a.brutal {
   transition-delay: 0s;
 }
 
-a.brutal:link, a.brutal:visited	{
+a.brutal:link,
+a.brutal:visited {
   color: skyblue;
   background-color: none;
 }
 
-a.brutal:hover, a.brutal:active {
+a.brutal:hover,
+a.brutal:active {
   color: red;
   background-color: blue;
-  background-radius: 15px;
 }
 
-/* ======================Aside====================== */
+
+/* ===============Aside===================================================== */
 
 #aside {
-  #background-color: skyblue;
-  float: left;
-  width: 35%;
+  float: right;
+  width: 25%;
   height: 100%;
   margin-right: 0px;
   padding: 5px;
   margin-top: 4em;
   margin-bottom: 4.5em;
-  #border: 1px solid black;
   border-radius: 15px;
-
 }
 
-div.asideContent {
+div.content {
   background-color: skyblue;
   padding: 5px;
   margin: 5px;
@@ -268,7 +272,23 @@ img.aside {
 }
 
 
-/* ======================Footer====================== */
+/* ===============Section=================================================== */
+
+#section {
+  clear: right;
+  float: right;
+  width: 25%;
+  height: 100%;
+  margin-right: 0px;
+  padding: 5px;
+  top: 0;
+  margin-top: -50px;
+  margin-bottom: 4.5em;
+  border-radius: 15px;
+}
+
+
+/* ===============Footer==================================================== */
 
 footer {
   position: fixed;
@@ -312,6 +332,90 @@ button:active {
 footer h4.warning {
   text-align: right;
   margin-left: 5px;
+}
+
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ===============Responsive CSS=============================================== 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ===============Medium Screens============================================ */
+
+@media screen and (min-width:768px) and (max-width:992px) {
+  /* ===============Width Wrap============================================== */
+  #wrap {
+    width: 768px;
+    margin: 15 auto;
+  }
+  #article {
+    clear: both;
+    width: auto;
+  }
+  #aside {
+    margin-top: 0px;
+    width: 48.5%;
+    float: left;
+  }
+  #section {
+    margin-top: 0px;
+    margin-left: -10px;
+    width: 48.5%;
+    float: left;
+    
+  }
+  /* ===============Header================================================== */
+  header {
+    clear: both;
+    background-color: azure;
+    border-radius: 5px;
+    color: dimgray;
+    text-align: center;
+    padding: 5px;
+    width: 768px;
+    height: 6.5em;
+    position: fixed;
+    top: 0;
+  }
+}
+
+
+/* ===============Small Screens============================================= */
+
+@media screen and (max-width:768px) {
+  /* ===============Width Wrap============================================== */
+  #wrap {
+    width: auto;
+    margin: 15 auto;
+  }
+  #article {
+    width: 100%;
+    margin-right: 15px;
+    margin-left: -5px;
+  }
+  article {
+    margin: 0 auto;
+    width: 97%;
+  }
+  #aside {
+    margin-top: 0px;
+    margin-left: -5px;
+    width: 98%;
+  }
+  #section {
+    margin-top: 0px;
+    margin-left: -5px;
+    width: 98%;
+  }
+  /* ===============h4 Warning============================================== */
+  footer h4.warning {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    margin-right: 5px;
+    clear: both;
+  }
 }
 
 </style>
