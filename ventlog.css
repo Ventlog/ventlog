@@ -1,11 +1,16 @@
 <style>
 
+
+
 /* ============================ Body-Flexbox ============================= */
 
 .body-container {
     display: flex;
-    margin: auto;
-    width: 768px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
 }
 
 /* ============================ Header-Flexbox ============================ */
@@ -18,6 +23,7 @@
 .header-top {
     display: flex;
     align-items: flex-start;
+    padding: 5px;
 }
 
 .flex-logo {
@@ -29,7 +35,7 @@
  }
 
 .header-middle {
-    
+    padding: 5px;
 }
 
 .header-bottom {
@@ -39,6 +45,7 @@
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 768px;
+    align-content: center;
     margin: auto;
     
 }
@@ -62,11 +69,6 @@
 /* ============================= Header CSS =============================== */
 
 header {
-    padding: 10px;
-    border-bottom-style: solid;
-    border-bottom-color: darkgray;
-    border: rgba(255, 0, 0, .5);
-    width: 100%;
     background-color: deepskyblue;
 }
 
@@ -124,9 +126,7 @@ header {
 
 main {
     border-left-style: solid;
-    border-bottom-style: solid;
     border-left-color: azure;
-    border-bottom-color: azure;
     margin: auto;
     padding: 0;
     width: 70%;
@@ -145,17 +145,8 @@ main {
 article {
     padding: 5px;
     border-left-style: solid;
-    border-bottom-style: solid;
     border-left-color: azure;
-    border-bottom-color: azure;
 }
-
-/* ========================== Aside/Section Flexbox ================= */
-
-.aside-section-container {
-    
-}
-
 
 /* ========================== Aside Flexbox ======================= */
 
@@ -170,51 +161,19 @@ article {
 aside {
     padding: 5px;
     border-left-style: solid;
-    border-bottom-style: solid;
-    border-left-color: azure;
     border-left-color: azure;
 }
-
-
-
-
-
-/* ========================== Section Flexbox ======================= */
-
-.section-container {
-    display: flex;
-    flex-direction: column;
-}
-
-/* =========================== Section CSS =========================== */
-
-section {
-    padding: 5px;
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-left-color: azure;
-    border-left-color: azure;
-}
-
-
-
 
 /* ========================== Footer Flexbox ======================= */
 
 .footer-container {
     display: flex;
-    flex-direction: column;
 }
 
 /* ============================ Footer CSS ========================== */
 
 footer {
-    padding: 5px;
-    border-left-style: solid;
-    border-bottom-style: solid;
-    border-left-color: azure;
-    border-
-    width: 100%;
+    background-color: lightgrey;
 }
 
 
