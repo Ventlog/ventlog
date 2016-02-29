@@ -46,9 +46,11 @@
             <article class="article-container">
                 <h4>VENTLOG</h4>
                 <div class="add-vent">
-                    <form action="behavior.js">
-                        <input id="post-vent" type="text" name="post-vent"></input>
-                        <input id="button" type="submit" value="Submit"></input>
+                    <button class="show" type="button">Vent</button>
+                    <form id="vent-form" action="behavior.js">
+                        <input id="post-vent" class="hide" type="text" name="post-vent"></input>
+                        <input id="" type="checkbox" class="hide" name="location"><p class="hide">include location</p></input>
+                        <input id="button" class="hide" type="submit" value="Post"></input>
                     </form>
                 </div>
                 <div class="post-container">

@@ -156,7 +156,14 @@ article {
 }
 
 #post-vent {
-   ;
+   
+}
+
+.hide {
+    display: none;
+}
+
+.show {
 }
 
 /* ========================== Aside/Section Flexbox ================= */
