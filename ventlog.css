@@ -217,21 +217,27 @@ footer {
     width: 100%;
 }
 
+/* =====================================================================
+================================ Responsive CSS ========================
+====================================================================== */
 
+@media screen and (max-width:768px) {
 
+    .body-container {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        flex-direction: column;
+    }
 
+    .header-bottom {
+        width: 100%;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
+    .main-container {
+        -webkit-flex-flow: column;
+        flex-direction: column;
+    }
 
 
 
