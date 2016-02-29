@@ -1,0 +1,25 @@
+var x = document.getElementById("form")
+
+x.style.display = "block"
+
+   < script >  
+
+on load
+
+add event listener
+
+when click
+
+do callback
+
+
+
+     HTML                         CSS                                 JS 
+
+create the form 		add section			    <script> 
+text   	   			for hiding form			  add event listener(on load, call back)
+button				css for appearance		  add event listener for anchor tag (button) call back
+check box location		css for button			  var form = document.getElementId("form)
+anchortag on button						  form . style . display = "block"
+								  
+								  

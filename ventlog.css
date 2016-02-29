@@ -1,0 +1,243 @@
+<style>
+
+/* ============================ Body-Flexbox ============================= */
+
+.body-container {
+    display: flex;
+    margin: auto;
+    width: 768px;
+}
+
+/* ============================ Header-Flexbox ============================ */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.flex-logo {
+    flex: 1;
+}
+
+.flex-profile {
+    display: flex;    
+ }
+
+.header-middle {
+    
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    background-color:dimgray;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 768px;
+    margin: auto;
+    
+}
+
+.filler {
+    flex: 1;
+}
+
+.flex-tag {
+    flex: none;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+
+
+/* ============================= Header CSS =============================== */
+
+header {
+    padding: 10px;
+    border-bottom-style: solid;
+    border-bottom-color: darkgray;
+    border: rgba(255, 0, 0, .5);
+    width: 100%;
+    background-color: deepskyblue;
+}
+
+.font {
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+/* ===============Menu====================================================== */
+
+	 div.menu {
+	 }
+
+	 div.menu ul li {
+	 	display: inline;
+	 }
+
+	 a.menu:link,
+	 a.menu:visited {
+	 	color: white;
+	 }
+
+	 a.menu:active {
+	 	color: white;
+	 	text-decoration: underline;
+	 }
+
+	 a.menu:hover {
+	 	color: white;
+	 	text-decoration: underline;
+	 }
+
+
+/* ============================== Main-Flexbox ======================= */
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.profile-picture-flex {
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ========================= Main CSS ==============================*/
+
+main {
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-color: azure;
+    border-bottom-color: azure;
+    margin: auto;
+    padding: 0;
+    width: 70%;
+}
+
+
+/* ========================== Article Flexbox ======================= */
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========================= Article CSS ============================ */
+
+article {
+    padding: 5px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-color: azure;
+    border-bottom-color: azure;
+}
+
+/* ========================== Aside/Section Flexbox ================= */
+
+.aside-section-container {
+    
+}
+
+
+/* ========================== Aside Flexbox ======================= */
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= Aside CSS ============================= */
+
+aside {
+    padding: 5px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-color: azure;
+    border-left-color: azure;
+}
+
+
+
+
+
+/* ========================== Section Flexbox ======================= */
+
+.section-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* =========================== Section CSS =========================== */
+
+section {
+    padding: 5px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-color: azure;
+    border-left-color: azure;
+}
+
+
+
+
+/* ========================== Footer Flexbox ======================= */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ============================ Footer CSS ========================== */
+
+footer {
+    padding: 5px;
+    border-left-style: solid;
+    border-bottom-style: solid;
+    border-left-color: azure;
+    border-
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
