@@ -151,6 +151,14 @@ article {
     border-bottom-color: azure;
 }
 
+.add-vent {
+    display: flex;
+}
+
+#post-vent {
+   ;
+}
+
 /* ========================== Aside/Section Flexbox ================= */
 
 .aside-section-container {
