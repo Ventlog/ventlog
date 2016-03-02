@@ -77,7 +77,7 @@ header {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
-    padding: 2px;
+
 }
 
 /* ===============Menu====================================================== */
@@ -214,6 +214,10 @@ aside {
     padding: 5px;
 }
 
+aside div {
+    border-left-style: solid;
+}
+
 /* ========================== Footer Flexbox ======================= */
 
 .footer-container {
@@ -281,7 +285,9 @@ footer {
         flex-direction: column;
     }
 
-
+    .filler {
+        flex: .1;
+    }
 
 
 
