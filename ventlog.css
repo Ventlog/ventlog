@@ -122,7 +122,7 @@ header {
 
 .post-top-flex {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .profile-picture-flex {
@@ -146,27 +146,6 @@ main {
     margin: 5px;
     padding: 5px;
 }
-
-.post-username {
-    font-family: sans-serif;
-    color: deepskyblue;
-    flex: 1;
-    text-decoration: none;
-}
-
-.post-datetime {
-    font-family: sans-serif;
-    color: deepskyblue;
-    flex: 1;
-    text-decoration: none;
-}
-
-
-.profile-flex-filler {
-    flex: 2.5;
-}
-
-
 
 
 
@@ -210,6 +189,12 @@ article {
 
 aside {
     padding: 5px;
+}
+
+aside div {
+    border-left-style: solid;
+    border-left-color: lightgrey;
+    border-left-width: thin;
 }
 
 /* ========================== Footer Flexbox ======================= */
