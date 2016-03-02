@@ -112,12 +112,21 @@ header {
 }
 
 .post-container {
+    background-color: white;
+    flex-direction: column;
+    border-radius: 5px;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
 }
 
+.post-top-flex {
+    display: flex;
+    justify-content: center;
+}
+
 .profile-picture-flex {
+    padding: 5px;
     width: 100px;
     height: 100px;
 }
@@ -126,12 +135,39 @@ header {
 /* ========================= Main CSS ==============================*/
 
 main {
-    border-left-style: solid;
-    border-left-color: azure;
     margin: auto;
     padding: 0;
     width: 70%;
 }
+
+.post-content {
+    border-left-style: solid;
+    border-left-color: deepskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+.post-username {
+    font-family: sans-serif;
+    color: deepskyblue;
+    flex: 1;
+    text-decoration: none;
+}
+
+.post-datetime {
+    font-family: sans-serif;
+    color: deepskyblue;
+    flex: 1;
+    text-decoration: none;
+}
+
+
+.profile-flex-filler {
+    flex: 2.5;
+}
+
+
+
 
 
 /* ========================== Article Flexbox ======================= */
@@ -145,12 +181,8 @@ main {
 
 article {
     padding: 5px;
-    border-left-style: solid;
-    border-left-color: azure;
 }
 
-<<<<<<< HEAD
-=======
 .add-vent {
     display: flex;
 }
@@ -166,14 +198,6 @@ article {
 .show {
 }
 
-/* ========================== Aside/Section Flexbox ================= */
-
-.aside-section-container {
-    
-}
-
-
->>>>>>> bc31fe7aa7280444e745eb9d4ca2264540ff0488
 /* ========================== Aside Flexbox ======================= */
 
 .aside-container {
@@ -186,8 +210,6 @@ article {
 
 aside {
     padding: 5px;
-    border-left-style: solid;
-    border-left-color: azure;
 }
 
 /* ========================== Footer Flexbox ======================= */
@@ -196,10 +218,43 @@ aside {
     display: flex;
 }
 
+.footer-style-container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.footer-style-left {
+    display: flex;
+    flex: 1;
+    background-color: dimgray;
+    border-top-right-radius: 30px;
+    margin: auto;
+}
+
+.filler-footer {
+    flex: 3;
+}
+
+.footer-style-right {
+    display: flex;
+    flex: 1;
+    background-color: dimgray;
+    border-top-left-radius: 30px;
+    margin: auto;
+}
+
+.footer-periods {
+    color: dimgray;
+}
+
 /* ============================ Footer CSS ========================== */
 
 footer {
-    background-color: lightgrey;
+    background-color: white;
+    border-top-color: deepskyblue;
+    border-top-style: solid;
+    border-top-width: 5px;
 }
 
 /* =====================================================================
