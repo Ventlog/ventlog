@@ -76,6 +76,8 @@ header {
     font-family: sans-serif;
     color: whitesmoke;
     text-decoration: none;
+    text-align: center;
+    padding: 2px;
 }
 
 /* ===============Menu====================================================== */
