@@ -1,7 +1,4 @@
 <style>
-
-
-
 /* ============================ Body-Flexbox ============================= */
 
 .body-container {
@@ -12,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
 
 /* ============================ Header-Flexbox ============================ */
 
@@ -26,13 +24,36 @@ body {
     padding: 5px;
 }
 
+.search {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.search-button {
+    background-color: white;
+    width: 70px;
+    align-items: center;
+    border-radius: 5px;
+    border-color: deepskyblue;
+    outline: none;
+}
+
 .flex-logo {
+    margin-left: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
     flex: 1;
 }
 
 .flex-profile {
-    display: flex;    
- }
+    display: flex;
+    flex: 3;
+}
 
 .header-middle {
     padding: 5px;
@@ -41,13 +62,12 @@ body {
 .header-bottom {
     display: flex;
     flex-direction: row;
-    background-color:dimgray;
+    background-color: dimgray;
     border-bottom-right-radius: 30px;
     border-bottom-left-radius: 30px;
     width: 768px;
     align-content: center;
     margin: auto;
-    
 }
 
 .filler {
@@ -65,11 +85,15 @@ body {
 }
 
 
-
 /* ============================= Header CSS =============================== */
 
 header {
     background-color: deepskyblue;
+}
+
+.Vlogo {
+    width: 50px;
+    height: 50px;
 }
 
 .font {
@@ -80,30 +104,46 @@ header {
     padding: 2px;
 }
 
+.nav-button {
+    border: none;
+    text-decoration: none;
+    background-color: dimgray;
+    font-family: sans-serif;
+    padding: 2px;
+    color: whitesmoke;
+    outline: none;
+    font-size: 15px;
+}
+
+.nav-button:hover {
+    background-color: lightgrey;
+}
+
+
 /* ===============Menu====================================================== */
 
-	 div.menu {
-        margin-right: 20px;
-	 }
+div.menu {
+    margin-right: 20px;
+}
 
-	 div.menu ul li {
-	 	display: inline;
-	 }
+div.menu ul li {
+    display: inline;
+}
 
-	 a.menu:link,
-	 a.menu:visited {
-	 	color: white;
-	 }
+a.menu:link,
+a.menu:visited {
+    color: white;
+}
 
-	 a.menu:active {
-	 	color: white;
-	 	text-decoration: underline;
-	 }
+a.menu:active {
+    color: white;
+    text-decoration: underline;
+}
 
-	 a.menu:hover {
-	 	color: white;
-	 	text-decoration: underline;
-	 }
+a.menu:hover {
+    color: white;
+    text-decoration: underline;
+}
 
 
 /* ============================== Main-Flexbox ======================= */
@@ -150,13 +190,75 @@ main {
 }
 
 
-
 /* ========================== Article Flexbox ======================= */
 
 .article-container {
     display: flex;
     flex-direction: column;
 }
+
+
+/* ======================== Form CSS =========================== */
+
+#test {
+    display: none;
+}
+
+#newvent {
+    display: flex;
+    background-color: lightgrey;
+    opacity: 0.4;
+    flex-direction: column;
+    justify-content: center;
+    border-left-style: solid;
+    border-left-color: deepskyblue;
+    border-radius: 5px;
+}
+
+label {
+    flex: 3;
+    font-family: sans-serif;
+    color: deepskyblue;
+    display: block;
+    margin: 5px;
+}
+
+textarea {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    height: 10em;
+    width: 70em;
+}
+
+.formtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formfillertop {
+    flex: 2.8;
+}
+
+.formfillermid {}
+
+.exitvent {
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.formbottom {
+    display: flex;
+    justify-content: center;
+}
+
+.submitbutton {
+    margin: 5px;
+}
+
 
 /* ========================= Article CSS ============================ */
 
@@ -168,16 +270,6 @@ article {
     display: flex;
 }
 
-#post-vent {
-   
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-}
 
 /* ========================== Aside Flexbox ======================= */
 
@@ -199,78 +291,48 @@ aside div {
     border-left-width: thin;
 }
 
+
 /* ========================== Footer Flexbox ======================= */
 
 .footer-container {
     display: flex;
 }
 
-.footer-style-container {
-    display: flex;
-    flex-direction: row;
-    margin: auto;
-}
-
-.footer-style-left {
-    display: flex;
-    flex: 1;
-    background-color: dimgray;
-    border-top-right-radius: 30px;
-    margin: auto;
-}
-
-.filler-footer {
-    flex: 3;
-}
-
-.footer-style-right {
-    display: flex;
-    flex: 1;
-    background-color: dimgray;
-    border-top-left-radius: 30px;
-    margin: auto;
-}
-
-.footer-periods {
-    color: dimgray;
-}
 
 /* ============================ Footer CSS ========================== */
 
 footer {
     background-color: white;
-    border-top-color: deepskyblue;
-    border-top-style: solid;
-    border-top-width: 5px;
+    border-color: deepskyblue;
+    border-top-style: groove;
 }
+
 
 /* =====================================================================
 ================================ Responsive CSS ========================
 ====================================================================== */
 
 @media screen and (max-width:768px) {
-
     .body-container {
         display: flex;
         margin: auto;
         width: 100%;
         flex-direction: column;
     }
-
     .header-bottom {
         width: 100%;
     }
-
     .main-container {
         -webkit-flex-flow: column;
         flex-direction: column;
     }
-
-
-
-
-
-
-
+    .filler {
+        flex: .5;
+    }
+    textarea {
+        width: 45em;
+        height: 5em;
+    }
+}
 
 </style>

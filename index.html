@@ -6,6 +6,8 @@
     <title>Let it out.</title>
     <link rel="stylesheet" href="ventlog.css">
     <meta name="viewport" content="width=500, initial-scale=1">
+    <script src="post_a_status.js">
+    </script>
 </head>
 
 <body class="body-container">
@@ -14,28 +16,29 @@
 
         <div class="header-top">
             <div class="flex-logo">
-                <img src="pictures/ventlsog_logo.png" alt="logo">
+                <img src="http://i.imgur.com/6t9fvhp.png" class=Vlogo alt="logo">
             </div>
+            <form>
+                <input type="text" class="search">
+                <input type="submit" value="Search" class="search-button">
+            </form>
             <div class="menu">
                 <ul>
-                    <li><a href="" class="font">Edit my Profile</a></li>
+                    <li><a href="" class="font">My Profile</a></li>
                     <li class="font">|</li>
                     <li><a href="" class="font">Logout</a></li>
                 </ul>
-            </div>
-        </div>
-        <div class="header-middle">
-            <div class="flex-tag">
-                <a href="/index.html" class="font">THE PLACE TO VENT</a>
             </div>
         </div>
     </header>
     <div class="header-bottom">
         <div class="filler"></div>
         <div class="flex-nav">
-            <a href="index.html" class="font">HOME</a>
-            <a href="myvents.html" class="font">MY VENTS</a>
-            <a href="users.html" class="font">USERS</a>
+            <button value="press" class="nav-button"><a href="index.html" class="font">HOME</a></button>
+
+            <button onclick="togglediv('test')" id="vent" class="nav-button">NEW VENT</button>
+
+            <button value="press" class="nav-button"><a href="" class="font">USERS</a></button>
         </div>
         <div class="filler"></div>
     </div>
@@ -44,15 +47,20 @@
 
         <div>
             <article class="article-container">
-                <h4>VENTLOG</h4>
-                <div class="add-vent">
-                    <button class="show" type="button">Vent</button>
-                    <form id="vent-form" action="behavior.js">
-                        <input id="post-vent" class="hide" type="text" name="post-vent"></input>
-                        <input id="" type="checkbox" class="hide" name="location">
-                        <p class="hide">include location</p>
-                        </input>
-                        <input id="button" class="hide" type="submit" value="Post"></input>
+                <div id="test">
+                    <form id="newvent">
+                        <div class="formtop">
+                            <div class="formfillertop"></div>
+                            <label for="ventcontent">Let it out!</label>
+                            <button class="exitvent">&times</button>
+                        </div>
+                        <div class="formmiddle">
+                            <div class="formfillermid"></div>
+                            <textarea id="ventcontent"></textarea>
+                        </div>
+                        <div class="formbottom">
+                            <button type="submit" class="submitbutton">Vent It!</button>
+                        </div>
                     </form>
                 </div>
                 <div class="post-container">
@@ -113,17 +121,6 @@
             </div>
         </div>
     </main>
-    <div class="footer-container">
-        <div class="footer-style-left">
-            <a href="" class="footer-periods">.</a>
-        </div>
-        <div class="filler-footer">
-
-        </div>
-        <div class="footer-style-right">
-            <a href="" class="footer-periods">.</a>
-        </div>
-    </div>
     <footer class="footer-container">
         <h4>Website still in beta. Official release coming soon!</h4>
     </footer>
