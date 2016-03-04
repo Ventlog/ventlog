@@ -101,7 +101,7 @@ header {
     color: whitesmoke;
     text-decoration: none;
     text-align: center;
-    padding: 2px;
+
 }
 
 .nav-button {
@@ -326,6 +326,7 @@ footer {
         -webkit-flex-flow: column;
         flex-direction: column;
     }
+<<<<<<< HEAD
     .filler {
         flex: .5;
     }
@@ -334,5 +335,16 @@ footer {
         height: 5em;
     }
 }
+=======
+
+    .filler {
+        flex: .1;
+    }
+
+
+
+
+
+>>>>>>> 86d06fae8918095b0fb4ecc067b645a5175dd953
 
 </style>
