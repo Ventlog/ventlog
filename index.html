@@ -3,135 +3,191 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>VentLog</title>
+  <title>Let it out.</title>
   <link rel="stylesheet" href="ventlog.css">
   <meta name="viewport" content="width=500, initial-scale=1">
+  <script src="post_a_status.js"></script>
+  <script src="toggle.js"></script>
+  <script src="reply.js"></script>
 </head>
 
-<body>
-  <div id="wrap">
-    <header class="gradient">
-    <div class="logo">
-      <img class="logo" src="pictures/ventlog_logo.png" alt="logo">
-    </div>
-    <div class="tagline">
-      <a class="tagline" href="/index.html">THE PLACE TO VENT</a>
-    </div>
-    <div class="nav">
-      <nav class="nav">
-        <ul>
-          <li id="current_page"><a href="index.html">HOME</a></li>
-          <li><a href="myvents.html">MY VENTS</a></li>
-          <li><a href="users.html">ALL USERS</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="menu">
-      <ul class="menu">
-        <li><a class="menu" href="">Edit my profile</a></li>
-        <li>|</li>
-        <li><a class="menu" href="">Logout</a></li>
-      </ul>
-    </div> 
-  </header>
+<body class="body-container">
 
-    <main>
+  <header class="header-container">
 
-      <!--
-      <section>
-        <div class="section">
-
-        </div>
-      </section>
-      -->
-      <div id="article">
-        <article>
-          <h4>VentLog</h4>
-          <div class="post">
-            <img class="profilepicture" alt="profile" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
-            <p>Username</p>
-            <p>Lorem <a class="brutal" href="">Hover Me</a> ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
-          </div>
-          <div class="post">
-            <img class="profilepicture" alt="profile" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
-          </div>
-          <div class="post">
-            <img class="profilepicture" alt="profile" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
-          </div>
-          <div class="post">
-            <img class="profilepicture" alt="profile" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
-          </div>
-          <div class="post">
-            <img class="profilepicture" alt="profile" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio officia quia nulla voluptatem!</p>
-          </div>
-
-        </article>
+    <div class="header-top">
+      <div class="flex-logo">
+        <img src="http://i.imgur.com/6t9fvhp.png" class=Vlogo alt="logo">
       </div>
-      <div id="aside">
-        <aside>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+      <form>
+        <input type="text" class="search">
+        <input type="submit" value="Search" class="search-button">
+      </form>
+      <div class="menu">
+        <ul>
+          <li><a href="" class="font">My Profile</a></li>
+          <li class="font">|</li>
+          <li><a href="" class="font">Logout</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="header-bottom">
+    <div class="filler"></div>
+    <div class="flex-nav">
+      <button value="press" class="nav-button"><a href="index.html" class="font">HOME</a></button>
+
+      <button onclick="togglediv('test')" id="vent" class="nav-button">NEW VENT</button>
+
+      <button value="press" class="nav-button"><a href="" class="font">USERS</a></button>
+    </div>
+    <div class="filler"></div>
+  </div>
+
+  <main class="main-container">
+
+    <div>
+      <article class="article-container">
+        <div id="test">
+          <form id="newvent">
+            <div class="formtop">
+              <div class="formfillertop"></div>
+              <label for="ventcontent">Let it out!</label>
+              <button class="exitvent">&times</button>
+            </div>
+            <div class="formmiddle">
+              <div class="formfillermid"></div>
+              <textarea id="ventcontent" name="Vent" maxlength="200"></textarea>
+              <input type="checkbox" name="location" class="checkBottom">include location
+              <br>
+            </div>
+            <div class="formbottom">
+              <button type="submit" class="submitbutton">Vent It!</button>
+            </div>
+          </form>
+        </div>
+        <button class="" onclick="toggle_visibility('hideMe')">Toggle</button>
+        <div id="hideMe">Hit Toggle to hide/show this test text</div>
+        <div class="post-container">
+          <div class="post-top-flex">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
           </div>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+          <div class="post-content">
+            <p>Lorem<a class="brutal" href="">Hover Me</a> ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio
+              officia quia nulla voluptatem!</p>
+            <button onclick="toggle_visibility('reply1')">Reply</button>
+            <div id="reply1" class="reply">
+              <form>
+                <div>
+                  <div class="formfillertop"></div>
+                  <label for="ventcontent">Let it out!</label>
+                  <button class="exitvent">&times</button>
+                </div>
+                <div class="formmiddle">
+                  <div class="formfillermid"></div>
+                  <textarea id="ventcontent" name="Vent" maxlength="200"></textarea>
+                  <input type="checkbox" name="location" class="checkBottom">include location
+                  <br>
+                </div>
+                <div class="formbottom">
+                  <button type="submit" class="submitbutton">Vent It!</button>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+        </div>
+        <div class="post-container">
+          <div class="post-top-flex">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
           </div>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
+          <div class="post-content">
+            <p>Lorem<a class="brutal" href="">Hover Me</a> ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio
+              officia quia nulla voluptatem!</p>
+            <button onclick="toggle_visibility('reply2')">Reply</button>
+            <div id="reply2" class="reply">
+              <form>
+                <div>
+                  <div class="formfillertop"></div>
+                  <label for="ventcontent">Let it out!</label>
+                  <button class="exitvent">&times</button>
+                </div>
+                <div class="formmiddle">
+                  <div class="formfillermid"></div>
+                  <textarea id="ventcontent" name="Vent" maxlength="200"></textarea>
+                  <input type="checkbox" name="location" class="checkBottom">include location
+                  <br>
+                </div>
+                <div class="formbottom">
+                  <button type="submit" class="submitbutton">Vent It!</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="post-container">
+          <div class="post-top-flex">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" />
+          </div>
+          <div class="post-content">
+            <p>Lorem<a class="brutal" href="">Hover Me</a> ipsum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur ullam nobis, vitae natus distinctio
+              officia quia nulla voluptatem!</p>
+            <button onclick="toggle_visibility('reply3')">Reply</button>
+            <div id="reply3" class="reply">
+              <form>
+                <div>
+                  <div class="formfillertop"></div>
+                  <label for="ventcontent">Let it out!</label>
+                  <button class="exitvent">&times</button>
+                </div>
+                <div class="formmiddle">
+                  <div class="formfillermid"></div>
+                  <textarea id="ventcontent" name="Vent" maxlength="200"></textarea>
+                  <input type="checkbox" name="location" class="checkBottom">include location
+                  <br>
+                </div>
+                <div class="formbottom">
+                  <button type="submit" class="submitbutton">Vent It!</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+
+      </article>
+    </div>
+    <div>
+      <div>
+        <aside class="aside-container">
+          <div class="post-container">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
             <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+            <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+          </div>
+          <div class="post-container">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
+            <p>Username</p>
+            <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+          </div>
+          <div class="post-container">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
+            <p>Username</p>
+            <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
+          </div>
+          <div class="post-container">
+            <img class="profile-picture-flex" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
+            <p>Username</p>
+            <p class="post-content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
           </div>
         </aside>
       </div>
-      <div id="section">
-        <section>
-         <h5>This is a Section</h5>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
-          </div>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
-          </div>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
-          </div>
-          <div class="content">
-            <img class="aside" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png" alt="photo">
-            <p>Username</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis itaque ipsa esse error, dicta aspernatur eum obcaecati dolore amet. Hic esse officia accusantium dicta molestias sapiente quo, aspernatur nemo veniam!</p>
-          </div>
-        </section>
-      </div>
-    </main>
+    </div>
+  </main>
+  <footer class="footer-container">
+    <h4>Website still in beta. Official release coming soon!</h4>
+  </footer>
 
-    <footer>
-        <button class="footer" type="button" onclick="">Source Code</button>
-        <button class="footer" type="button" onclick="">GitHub</button>
-      <h4 class="warning">Website still in beta. Be patient with us.</h4>
-    </footer>
-  </div>
+
 </body>
 
 </html>
+>>>>>>> ver_3.1

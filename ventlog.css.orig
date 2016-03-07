@@ -1,0 +1,350 @@
+<style>
+/* ============================ Body-Flexbox ============================= */
+
+.body-container {
+    display: flex;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ============================ Header-Flexbox ============================ */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top {
+    display: flex;
+    align-items: flex-start;
+    padding: 5px;
+}
+
+.search {
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 10px;
+    outline: none;
+}
+
+.search-button {
+    background-color: white;
+    width: 70px;
+    align-items: center;
+    border-radius: 5px;
+    border-color: deepskyblue;
+    outline: none;
+}
+
+.flex-logo {
+    margin-left: 15px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+.flex-profile {
+    display: flex;
+    flex: 3;
+}
+
+.header-middle {
+    padding: 5px;
+}
+
+.header-bottom {
+    display: flex;
+    flex-direction: row;
+    background-color: dimgray;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    width: 768px;
+    align-content: center;
+    margin: auto;
+}
+
+.filler {
+    flex: 1;
+}
+
+.flex-tag {
+    flex: none;
+}
+
+.flex-nav {
+    display: flex;
+    justify-content: space-around;
+    flex: 1;
+}
+
+
+/* ============================= Header CSS =============================== */
+
+header {
+    background-color: deepskyblue;
+}
+
+.Vlogo {
+    width: 50px;
+    height: 50px;
+}
+
+.font {
+    font-family: sans-serif;
+    color: whitesmoke;
+    text-decoration: none;
+    text-align: center;
+
+}
+
+.nav-button {
+    border: none;
+    text-decoration: none;
+    background-color: dimgray;
+    font-family: sans-serif;
+    padding: 2px;
+    color: whitesmoke;
+    outline: none;
+    font-size: 15px;
+}
+
+.nav-button:hover {
+    background-color: lightgrey;
+}
+
+
+/* ===============Menu====================================================== */
+
+div.menu {
+    margin-right: 20px;
+}
+
+div.menu ul li {
+    display: inline;
+}
+
+a.menu:link,
+a.menu:visited {
+    color: white;
+}
+
+a.menu:active {
+    color: white;
+    text-decoration: underline;
+}
+
+a.menu:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* ============================== Main-Flexbox ======================= */
+
+.main-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.post-container {
+    background-color: white;
+    flex-direction: column;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.post-top-flex {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.profile-picture-flex {
+    padding: 5px;
+    width: 100px;
+    height: 100px;
+}
+
+
+/* ========================= Main CSS ==============================*/
+
+main {
+    margin: auto;
+    padding: 0;
+    width: 70%;
+}
+
+.post-content {
+    border-left-style: solid;
+    border-left-color: deepskyblue;
+    margin: 5px;
+    padding: 5px;
+}
+
+
+/* ========================== Article Flexbox ======================= */
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ======================== Form CSS =========================== */
+
+#test {
+    display: none;
+}
+
+#newvent {
+    display: flex;
+    background-color: lightgrey;
+    opacity: 0.4;
+    flex-direction: column;
+    justify-content: center;
+    border-left-style: solid;
+    border-left-color: deepskyblue;
+    border-radius: 5px;
+}
+
+label {
+    flex: 3;
+    font-family: sans-serif;
+    color: deepskyblue;
+    display: block;
+    margin: 5px;
+}
+
+textarea {
+    display: flex;
+    flex: 1;
+    margin: 10px;
+    font-family: sans-serif;
+    border-radius: 5px;
+    height: 10em;
+    width: 70em;
+}
+
+.formtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.formfillertop {
+    flex: 2.8;
+}
+
+.formfillermid {}
+
+.exitvent {
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.formbottom {
+    display: flex;
+    justify-content: center;
+}
+
+.submitbutton {
+    margin: 5px;
+}
+
+
+/* ========================= Article CSS ============================ */
+
+article {
+    padding: 5px;
+}
+
+.add-vent {
+    display: flex;
+}
+
+
+/* ========================== Aside Flexbox ======================= */
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* ============================= Aside CSS ============================= */
+
+aside {
+    padding: 5px;
+}
+
+aside div {
+    border-left-style: solid;
+    border-left-color: lightgrey;
+    border-left-width: thin;
+}
+
+
+/* ========================== Footer Flexbox ======================= */
+
+.footer-container {
+    display: flex;
+}
+
+
+/* ============================ Footer CSS ========================== */
+
+footer {
+    background-color: white;
+    border-color: deepskyblue;
+    border-top-style: groove;
+}
+
+
+/* =====================================================================
+================================ Responsive CSS ========================
+====================================================================== */
+
+@media screen and (max-width:768px) {
+    .body-container {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        flex-direction: column;
+    }
+    .header-bottom {
+        width: 100%;
+    }
+    .main-container {
+        -webkit-flex-flow: column;
+        flex-direction: column;
+    }
+<<<<<<< HEAD
+    .filler {
+        flex: .5;
+    }
+    textarea {
+        width: 45em;
+        height: 5em;
+    }
+}
+=======
+
+    .filler {
+        flex: .1;
+    }
+
+
+
+
+
+>>>>>>> 86d06fae8918095b0fb4ecc067b645a5175dd953
+
+</style>
