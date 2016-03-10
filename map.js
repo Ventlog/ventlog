@@ -4,19 +4,27 @@
     'app_code': 'fU3vlhaOhYNi-jM-uSjMtA'
   });
 
-  // Obtain the default map types from the platform object
-  var maptypes = platform.createDefaultLayers();
+  // Get the default map types from the Platform object:
+  var defaultLayers = platform.createDefaultLayers();
 
-  // Instantiate (and display) a map object:
+  // Instantiate the map:
   var map = new H.Map(
     document.getElementById('mapContainer'),
-    maptypes.normal.map, {
+    defaultLayers.normal.map, {
       zoom: 16,
       center: {
-        lng: -122.4015567,
-        lat: 37.792085
+        lng: -122.39972,
+        lat: 37.79202
       }
     });
+
+  // Add window resize listener to adjust the map dimensions.
+  window.addEventListener('resize', function() {
+    map.getViewPort().resize();
+  });
+
+  // Create the default UI:
+  var ui = H.ui.UI.createDefault(map, defaultLayers, 'en-US');
 
   // Enable the event system on the map instance:
   var mapEvents = new H.mapevents.MapEvents(map);
@@ -36,9 +44,14 @@
   // Add the group to the map object (created earlier):
   map.addObject(group);
 
-  // Create a marker:
-  marker = new H.map.Marker(map.getCenter());
+  // Add map context menu event listener.
+  map.addEventListener('contextmenu', onContextMenuRequested);
 
-  // Add the marker to the group (which causes
-  // it to be displayed on the map)
-  group.addObject(marker);
+  function onContextMenuRequested(e) {
+    e.items.push(new H.util.ContextItem({
+      label: 'Hello Holberton School!',
+      callback: function() {
+        map.setZoom(map.getZoom() + 1);
+      }
+    }));
+  }
