@@ -1,0 +1,139 @@
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+   ===============Responsive CSS=============================================== 
+   +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+/* ===============Medium Screens============================================ */
+
+/@media screen and (min-width:768px) and (max-width:992px) {
+    /* ===============Width Wrap============================================== */
+
+    #wrap {
+	width: 768px;
+	margin: 15 auto;
+    }
+    #article {
+	clear: both;
+	width: auto;
+    }
+    #aside {
+	margin-top: 0px;
+	width: 48.5%;
+	float: left;
+    }
+    #section {
+	margin-top: 0px;
+	margin-left: -10px;
+	width: 48.5%;
+	float: left;
+    }
+    /* ===============Header================================================== */
+    header {
+	clear: both;
+	#border-radius: 5px;
+	#text-align: center;
+	#padding: 5px;
+	width: 768px;
+	height: 6.5em;
+	position: fixed;
+	top: 0;
+    }
+}
+
+
+/* ===============Small Screens============================================= */
+
+@media screen and (max-width:768px) {
+    /* ===============Width Wrap============================================== */
+    #wrap {
+	width: auto;
+	margin: 15 auto;
+    }
+    header {
+	position: fixed;
+	width: 99%;
+	height: 40px;
+	margin-left: -10px;
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	align-items: stretch;
+    }
+    div.logo {
+	padding: 0px;
+    }
+    img.logo {
+	margin: 0 auto;
+	height: 50px;
+	padding: 0px;
+    }
+    div.tagline {
+	align-self: center;
+    }
+    a.tagline:link, a.tagline:visited {
+			color: black;
+		    }
+    a.tagline:hover, a.tagline:active {
+			 color: skyblue;
+			 background-color: black
+		     }
+    div.nav-menu {
+	align-self: center;
+	background-color: black;
+	cursor: pointer;
+	margin: 0 auto;
+    }
+    button {
+	align-self: center;
+	background-color: black;
+    }
+    #nav-button {
+	background-color: black;
+	color: gray;
+    }
+    #nav-button:hover, #nav-button:focus {
+			   background-color: gray;
+		       }
+    div.menu {
+	margin: 0 auto;
+	display: none;
+    }
+    div.nav {
+	width: 100%;
+	margin: 0 auto;
+	display: none;
+    }
+
+    #article {
+	width: 100%;
+	margin-right: 15px;
+	margin-left: -5px;
+    }
+    article {
+	margin: 0 auto;
+	width: 97%;
+    }
+    #aside {
+	margin-top: 0px;
+	margin-left: -5px;
+	width: 98%;
+    }
+    #section {
+	margin-top: 0px;
+	margin-left: -5px;
+	width: 98%;
+    }
+    footer {
+	position: relative;
+	float: right;
+	width: 100%;
+    }
+    /* ===============h4 Warning============================================== */
+    footer h4.warning {
+	bottom: 0;
+	right: 0;
+	text-align: right;
+	margin-right: 5px;
+	clear: both;
+    }
+}
