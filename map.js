@@ -25,6 +25,9 @@
 
   // Create the default UI:
   var ui = H.ui.UI.createDefault(map, defaultLayers, 'en-US');
+  ui.addControl('zoomRectangle', new H.ui.ZoomRectangle());
+  var zoomRectangle = ui.getControl('zoomRectangle');
+  zoomRectangle.setAlignment('right-middle');
 
   // Enable the event system on the map instance:
   var mapEvents = new H.mapevents.MapEvents(map);
