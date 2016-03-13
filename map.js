@@ -4,6 +4,9 @@
     'app_code': 'fU3vlhaOhYNi-jM-uSjMtA'
   });
 
+  // Retrieve the target element for the map:
+  var targetElement = document.getElementById('mapContainer');
+
   // Get the default map types from the Platform object:
   var defaultLayers = platform.createDefaultLayers();
 
@@ -36,6 +39,7 @@
   map.addEventListener('tap', function(evt) {
     // Log 'tap' and 'mouse' events:
     console.log(evt.type, evt.currentPointer.type);
+
   });
 
   // Instantiate the default behavior, providing the mapEvents object:
@@ -50,11 +54,53 @@
   // Add map context menu event listener.
   map.addEventListener('contextmenu', onContextMenuRequested);
 
+  window.addEventListener('coords', function() {
+    map.getViewPort().interaction();
+  });
+
   function onContextMenuRequested(e) {
     e.items.push(new H.util.ContextItem({
       label: 'Hello Holberton School!',
       callback: function() {
         map.setZoom(map.getZoom() + 1);
+        var xcoord = H.util.EventTarget.viewportX;
+        var ycoord = H.util.EventTarget.viewportY;
+        console.log(xcoord);
+        console.log(ycoord);
       }
     }));
   }
+
+  // Create the parameters for the reverse geocoding request:
+  var reverseGeocodingParameters = {
+    prox: '37.79202,-122.39972',
+    mode: 'retrieveAddresses',
+    maxresults: 1
+  };
+
+  // Define a callback function to process the response:
+  function onSuccess(result) {
+    var location = result.Response.View[0].Result[0];
+
+    // Create an InfoBubble at the returned location with
+    // the address as its contents:
+    ui.addBubble(new H.ui.InfoBubble({
+      lat: location.Location.DisplayPosition.Latitude,
+      lng: location.Location.DisplayPosition.Longitude
+    }, {
+      content: location.Location.Address.Label
+    }));
+  };
+
+  // Get an instance of the geocoding service:
+  var geocoder = platform.getGeocodingService();
+
+  // Call the geocode method with the geocoding parameters,
+  // the callback and an error callback function (called if a
+  // communication error occurs):
+  geocoder.reverseGeocode(
+    reverseGeocodingParameters,
+    onSuccess,
+    function(e) {
+      alert(e);
+    });
