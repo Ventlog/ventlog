@@ -36,7 +36,7 @@ window.addEventListener('resize', function() {
   map.getViewPort().resize();
 });
 
-// Add map context menu event listener. contextmenu
+// Add map context menu event listener contextmenu
 map.addEventListener('contextmenu', function(e) {
   var coord = map.screenToGeo(e.viewportX, e.viewportY);
   var rgcParams = {
