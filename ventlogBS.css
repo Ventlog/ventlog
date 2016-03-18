@@ -20,7 +20,21 @@
   .text-lg-center { text-align: center; }
 }
 
-.padding1 {
+.padding-side-10 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0px;
+}
+
+.thumbnail-sm {
+  width: 40%;
+  height: 40%;
+}
+
+.thumbnail-md {
+  width: 110%;
+  height: 110%;
 }
