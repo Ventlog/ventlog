@@ -1,0 +1,84 @@
+.text-xs-left {
+  text-align: left;
+}
+
+.text-xs-right {
+  text-align: right;
+}
+
+.text-xs-center {
+  text-align: center;
+}
+
+@media (min-width: @screen-sm-min) {
+  .text-sm-left {
+    text-align: left;
+  }
+  .text-sm-right {
+    text-align: right;
+  }
+  .text-sm-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: @screen-md-min) {
+  .text-md-left {
+    text-align: left;
+  }
+  .text-md-right {
+    text-align: right;
+  }
+  .text-md-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: @screen-lg-min) {
+  .text-lg-left {
+    text-align: left;
+  }
+  .text-lg-right {
+    text-align: right;
+  }
+  .text-lg-center {
+    text-align: center;
+  }
+}
+
+.affix {
+  top: 0;
+  width: 100%;
+}
+
+.jumbotron {
+  padding: 0.5em 0.6em;
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1.2em;
+    .btn {
+      padding: 0.5em;
+    }
+  }
+}
+
+.padding-side-10 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0px;
+}
+
+.thumbnail-sm {
+  width: 40%;
+  height: 40%;
+}
+
+.thumbnail-md {
+  width: 110%;
+  height: 110%;
+}
