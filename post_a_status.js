@@ -1,3 +1,3 @@
-function togglediv(id) {
-  toggle_visibility(id)
-}
+// function togglediv(id) {
+//   toggle_visibility(id)
+// }
