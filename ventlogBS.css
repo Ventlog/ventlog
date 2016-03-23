@@ -82,3 +82,8 @@
   width: 110%;
   height: 110%;
 }
+
+.smaller-logo {
+  width: 30px;
+  height: 25px;
+}
