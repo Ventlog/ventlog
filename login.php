@@ -8,11 +8,13 @@
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="accessibility-BS/plugins/js/bootstrap-accessibility.js"></script>
   <script src="post_a_status.js"></script>
   <script src="toggle.js"></script>
   <script src="reply.js"></script>
   <script src="load_more.js"></script>
   <script src="ajax.js"></script>
+  <link rel="stylesheet" href="accessibility-BS/plugins/css/bootstrap-accessibility.css">
   <link rel="stylesheet" href="ventlogBS.css">
 </head>
 
@@ -43,27 +45,36 @@
   </nav>
 
   <div class="jumbotron">
-    <h1 class="padding-side-10">VentLog - Let it out!</h1>
+    <h1 class="padding-side-20">VentLog - Let it out!</h1>
     <p class="padding-side-10">VentLog is the leading website to vent to world. Post under different aliases for any reason
       and see that you're not alone!</p>
   </div>
+  <div class="container"
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <form role="form">
+          <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="pwd">
+          </div>
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+    </div>
 
-  <form role="form">
-    <div class="form-group">
-      <label for="email">Email address:</label>
-      <input type="email" class="form-control" id="email">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" id="pwd">
-    </div>
-    <div class="checkbox">
-      <label><input type="checkbox"> Remember me</label>
-    </div>
-    <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-  <br>
-  <h5>&copy; 2016 VentLog, Inc.</h5>
+    <br>
+  </div>
+
+  <div class="container-fluid footer">
+    <h5>&copy; 2016 VentLog, Inc.</h5>
+  </div>
 
 </body>
 
