@@ -40,6 +40,12 @@
   height: 25px;
 }
 
+html,body{
+    height: 100%
+}
+
 .footer {
-  bottom: 0px;
+  position: absolute;
+  height: 50px;
+  bottom: 0;
 }

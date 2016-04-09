@@ -51,10 +51,26 @@
           <div class="panel panel-info">
             <div class="panel-heading padding-bottom-0">
               <div class="row">
-                <p>Hello, <?php echo $_POST["email"]; ?></p>
+                <p>Hello,
+                  <?php if (isset($_POST["email"])) {
+                    echo $_POST["email"];
+                  } else {
+                    echo "there";
+                  }; ?>
+                </p>
               </div>
             </div>
             <div class="panel-body">
+              <p>Your rot13'd login is:
+                <?php if (isset($_POST["email"])) {
+                  echo str_rot13($_POST["email"]);
+                }?>
+              </p>
+              <p>The length of your login is:
+                <?php if (isset($_POST["email"])) {
+                  echo strlen($_POST["email"]);
+                }?>
+              </p>
             </div>
           </div>
         </div>

@@ -52,14 +52,14 @@
   <div class="container"
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <form role="form">
+        <form role="form" action="index.php" method="post">
           <div class="form-group">
             <label for="email">Email address:</label>
-            <input type="email" class="form-control" id="email">
+            <input type="email" class="form-control" id="email" name="email">
           </div>
           <div class="form-group">
             <label for="pwd">Password:</label>
-            <input type="password" class="form-control" id="pwd">
+            <input type="password" class="form-control" id="pwd" name="pwd">
           </div>
           <div class="checkbox">
             <label><input type="checkbox"> Remember me</label>
@@ -72,8 +72,8 @@
     <br>
   </div>
 
-  <div class="container-fluid footer">
-    <h5>&copy; 2016 VentLog, Inc.</h5>
+  <div class="footer container-fluid">
+    <h5 class="">&copy; 2016 VentLog, Inc.</h5>
   </div>
 
 </body>
