@@ -1,3 +1,35 @@
+<?php
+
+$users = [
+  array("id" => 1, "login" => "user1@test.com", "password" => "password1", "full_name" => "User 1"),
+  array("id" => 2, "login" => "user2@test.com", "password" => "password2", "full_name" => "User 2"),
+  array("id" => 3, "login" => "user3@test.com", "password" => "password3", "full_name" => "User 3"),
+];
+
+$credentials = false;
+$guest = false;
+
+function userExists($login, $password, $users) {
+  foreach ($users as &$user) {
+      if ($user['login'] == $login And $user['password'] == $password) {
+        return $user;
+      }
+  }
+  return false;
+}
+
+if (isset($_POST["login"]) And isset($_POST["pwd"])) {
+  if (userExists($_POST["login"], $_POST["pwd"], $users) != false) {
+    $credentials = true;
+    $user = userExists($_POST["login"], $_POST["pwd"], $users);
+    $name = $user["full_name"];
+  }
+} else {
+  $guest = true;
+  $name = "there";
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,34 +80,37 @@
     <div class="col-xs-12 col-md-3">
       <div class="row">
         <div class="col-xs-12 col-md-12">
+          <?php if ($credentials Or $guest) { ?>
           <div class="panel panel-info">
             <div class="panel-heading padding-bottom-0">
               <div class="row">
                 <p>Hello,
-                  <?php if (isset($_POST["email"])) {
-                    echo $_POST["email"];
-                  } else {
-                    echo "there";
-                  }; ?>
+                  <?php
+                    echo $name;
+                  ?>
                 </p>
               </div>
             </div>
+            <?php if ($credentials) { ?>
             <div class="panel-body">
               <p>Your rot13'd login is:
-                <?php if (isset($_POST["email"])) {
-                  echo str_rot13($_POST["email"]);
-                }?>
+                <?php echo str_rot13($name) ?>
               </p>
               <p>The length of your login is:
-                <?php if (isset($_POST["email"])) {
-                  echo strlen($_POST["email"]);
-                }?>
+                <?php echo strlen($name) ?>
               </p>
             </div>
+            <?php } ?>
           </div>
+          <?php } else { ?>
+          <div class="alert alert-danger">
+            <p>Invalid credentials!</p>
+          </div>
+          <?php } ?>
         </div>
       </div>
     </div>
+    <?php if ($credentials) { ?>
     <div class="col-xs-12 col-md-6 panel-group">
       <div class="row">
         <div class="panel-group">
@@ -297,9 +332,20 @@
       </div>
     </div>
   </div>
-  <br>
-  <h5>&copy; 2016 VentLog, Inc.</h5>
+    <?php } else { ?>
+  <div class="container-fluid">
+    <div class="jumbotron">
+      <h1 class="padding-side-20">VentLog - Let it out!</h1>
+      <p class="padding-side-10">VentLog is the leading website to vent to world. Post under different aliases for any reason
+        and see that you're not alone!</p>
+    </div>
+  </div>
+    <?php } ?>
 
+  <br>
+  <div class="footer container-fluid">
+    <h5 class="">&copy; 2016 VentLog, Inc.</h5>
+  </div>
 </body>
 
 </html>
