@@ -355,6 +355,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
     </div>
   </div>
     <?php } else { ?>
+  </div>
   <div class="container-fluid">
     <div class="jumbotron">
       <h1 class="padding-side-20">VentLog - Let it out!</h1>
