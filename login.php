@@ -25,7 +25,7 @@
     <p class="padding-side-10">VentLog is the leading website to vent to world. Post under different aliases for any reason
       and see that you're not alone!</p>
   </div>
-  <div class="container"
+  <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-4">
         <form role="form" action="index.php" method="post">
