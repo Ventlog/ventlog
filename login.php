@@ -19,31 +19,7 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="http://i.imgur.com/6t9fvhp.png" class="img-responsive smaller-logo" alt="logo"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">Users</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+  <?php include "views/header.php" ?>
   <div class="jumbotron">
     <h1 class="padding-side-20">VentLog - Let it out!</h1>
     <p class="padding-side-10">VentLog is the leading website to vent to world. Post under different aliases for any reason
@@ -72,9 +48,7 @@
     <br>
   </div>
 
-  <div class="footer container-fluid">
-    <h5 class="">&copy; 2016 VentLog, Inc.</h5>
-  </div>
+  <?php include 'views/footer.php'; ?>
 
 </body>
 

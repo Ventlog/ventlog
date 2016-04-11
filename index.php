@@ -1,10 +1,6 @@
 <?php
 
-$users = [
-  array("id" => 1, "login" => "user1@test.com", "password" => "password1", "full_name" => "User 1"),
-  array("id" => 2, "login" => "user2@test.com", "password" => "password2", "full_name" => "User 2"),
-  array("id" => 3, "login" => "user3@test.com", "password" => "password3", "full_name" => "User 3"),
-];
+include_once 'model/user.php';
 
 $credentials = false;
 $guest = false;
@@ -18,16 +14,23 @@ function userExists($login, $password, $users) {
   return false;
 }
 
-if (isset($_POST["login"]) And isset($_POST["pwd"])) {
-  if (userExists($_POST["login"], $_POST["pwd"], $users) != false) {
-    $credentials = true;
-    $user = userExists($_POST["login"], $_POST["pwd"], $users);
-    $name = $user["full_name"];
-  }
+if (isset($_COOKIE["login"])) {
+  $credentials = true;
+  $guest = false;
 } else {
-  $guest = true;
-  $name = "there";
+  if (isset($_POST["login"]) And isset($_POST["pwd"])) {
+    if (userExists($_POST["login"], $_POST["pwd"], $users) != false) {
+      $credentials = true;
+      $user = userExists($_POST["login"], $_POST["pwd"], $users);
+      $name = $user["full_name"];
+      setcookie("login", $user, time()+86400);
+    }
+  } else {
+    $guest = true;
+    $name = "there";
+  }
 }
+
 ?>
 
 <!DOCTYPE html>
@@ -51,33 +54,9 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
 </head>
 
 <body>
-  <nav class="navbar navbar-inverse">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="http://i.imgur.com/6t9fvhp.png" class="img-responsive smaller-logo" alt="logo"></a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">My Profile</a></li>
-          <li><a href="#">Users</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
+  <?php include "views/header.php" ?>
   <div class="container-fluid">
-    <div class="col-xs-12 col-md-3">
+    <div class="col-xs-12">
       <div class="row">
         <div class="col-xs-12 col-md-12">
           <?php if ($credentials Or $guest) { ?>
@@ -85,9 +64,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
             <div class="panel-heading padding-bottom-0">
               <div class="row">
                 <p>Hello,
-                  <?php
-                    echo $name;
-                  ?>
+                  <?php echo $name; ?>
                 </p>
               </div>
             </div>
@@ -104,13 +81,55 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
           </div>
           <?php } else { ?>
           <div class="alert alert-danger">
-            <p>Invalid credentials!</p>
+            <p>Invalid credentials! - Please log-in again: <a href="login.php">Login</a></p>
           </div>
           <?php } ?>
         </div>
       </div>
     </div>
     <?php if ($credentials) { ?>
+    <div class="col-xs-12 col-md-3">
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-success">
+            <div class="panel-heading padding-bottom-0">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img class="thumbnail thumbnail-md" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png"
+                    alt="photo">
+                </div>
+                <div class="col-xs-9">
+                  <p>Damian Ali</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">sum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam
+              eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur
+              ullam nobis, vitae natus</div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-success">
+            <div class="panel-heading padding-bottom-0">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img class="thumbnail thumbnail-md" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png"
+                    alt="photo">
+                </div>
+                <div class="col-xs-9">
+                  <p>Rudy Rigot</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">sum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam
+              eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur
+              ullam nobis, vitae natus</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="col-xs-12 col-md-6 panel-group">
       <div class="row">
         <div class="panel-group">
@@ -340,12 +359,10 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
         and see that you're not alone!</p>
     </div>
   </div>
-    <?php } ?>
+  <?php } ?>
 
-  <br>
-  <div class="footer container-fluid">
-    <h5 class="">&copy; 2016 VentLog, Inc.</h5>
-  </div>
+  <?php include 'views/footer.php'; ?>
+
 </body>
 
 </html>
