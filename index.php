@@ -196,20 +196,23 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
             </div>
             <div class="panel-body">
               <p><?php echo $status["vent"]; ?></p>
-              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reply1">Reply</button>
-              <div id="reply1" class="collapse">
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reply<?php echo $status["id"] ?>">Reply</button>
+              <div
+
+              id="reply<?php echo $status["id"] ?>" class="collapse"
+              >
                 <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="control-label col-sm-2" for="vent2">Vent:</label>
+                    <label class="control-label col-sm-2" for="vent2<?php echo $status["id"] ?>">Vent:</label>
                     <div class="col-sm-10">
-                      <textarea class="form-control" id="vent2" placeholder="Let it out!"></textarea>
+                      <textarea class="form-control" id="vent2<?php echo $status["id"] ?>" placeholder="Let it out!"></textarea>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">
-                        <label for="checkbox2">
-                          <input id="checkbox2" type="checkbox"> include location</label>
+                        <label for="checkbox2<?php echo $status["id"] ?>">
+                          <input id="checkbox2<?php echo $status["id"] ?>" type="checkbox"> include location</label>
                       </div>
                     </div>
                   </div>
