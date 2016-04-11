@@ -38,7 +38,7 @@
             <input type="password" class="form-control" id="pwd" name="pwd">
           </div>
           <div class="checkbox">
-            <label><input type="checkbox"> Remember me</label>
+            <label  for="remember-me"><input id="remember-me" type="checkbox"> Remember me</label>
           </div>
           <button type="submit" class="btn btn-default">Submit</button>
         </form>

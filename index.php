@@ -66,7 +66,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                 <p>Hello,
                   <?php echo $name; ?>
                   <?php if (!$credentials) { ?>
-                  . Please <a href="login.php">Login</a> to access VentLog.
+                  . Please <a class="info-link-color" href="login.php">Login</a> to access VentLog.
                   <?php } ?>
                 </p>
               </div>
@@ -84,7 +84,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
           </div>
           <?php } else { ?>
           <div class="alert alert-danger">
-            <p>Invalid credentials! - Please log-in again: <a href="login.php">Login</a></p>
+            <p class="alert-text-color">Hello there! You have Invalid credentials! - Please log-in again: <a class="alert-link-color" href="login.php">Login</a></p>
           </div>
           <?php } ?>
         </div>
@@ -138,13 +138,13 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
         <div class="panel-group">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <h4 class="panel-title"><a data-toggle="collapse" href="#collapse1">Click to Vent</a></h4>
+              <p class="panel-title"><a data-toggle="collapse" href="#collapse1">Click to Vent</a></p>
             </div>
             <div id="collapse1" class="panel-collapse collapse">
               <div class="panel-body">
                 <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="control-label col-sm-2">Vent:</label>
+                    <label class="control-label col-sm-2" for="vent1">Vent:</label>
                     <div class="col-sm-10">
                       <textarea class="form-control" id="vent1" placeholder="Let it out!"></textarea>
                     </div>
@@ -152,8 +152,8 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> include location</label>
+                        <label for="checkbox1">
+                          <input type="checkbox" id="checkbox1"> include location</label>
                       </div>
                     </div>
                   </div>
@@ -190,7 +190,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
               <div id="reply1" class="collapse">
                 <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="control-label col-sm-2">Vent:</label>
+                    <label class="control-label col-sm-2" for="vent2">Vent:</label>
                     <div class="col-sm-10">
                       <textarea class="form-control" id="vent2" placeholder="Let it out!"></textarea>
                     </div>
@@ -198,8 +198,8 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> include location</label>
+                        <label for="checkbox2">
+                          <input id="checkbox2" type="checkbox"> include location</label>
                       </div>
                     </div>
                   </div>
@@ -236,7 +236,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
               <div id="reply2" class="collapse">
                 <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="control-label col-sm-2">Vent:</label>
+                    <label for="vent3" class="control-label col-sm-2">Vent:</label>
                     <div class="col-sm-10">
                       <textarea class="form-control" id="vent3" placeholder="Let it out!"></textarea>
                     </div>
@@ -244,8 +244,8 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> include location</label>
+                        <label for="checkbox3">
+                          <input id="checkbox3" type="checkbox"> include location</label>
                       </div>
                     </div>
                   </div>
@@ -282,7 +282,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
               <div id="reply3" class="collapse">
                 <form class="form-horizontal" role="form">
                   <div class="form-group">
-                    <label class="control-label col-sm-2">Vent:</label>
+                    <label for="vent4" class="control-label col-sm-2">Vent:</label>
                     <div class="col-sm-10">
                       <textarea class="form-control" id="vent4" placeholder="Let it out!"></textarea>
                     </div>
@@ -290,8 +290,8 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                   <div class="form-group">
                     <div class="col-sm-offset-2 col-sm-10">
                       <div class="checkbox">
-                        <label>
-                          <input type="checkbox"> include location</label>
+                        <label for="checkbox4">
+                          <input id="checkbox4" type="checkbox"> include location</label>
                       </div>
                     </div>
                   </div>

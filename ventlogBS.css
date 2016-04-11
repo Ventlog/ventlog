@@ -49,3 +49,19 @@ html,body{
   height: 50px;
   bottom: 0;
 }
+
+.info-link-color {
+  color: #040300;
+}
+
+.alert-text-color {
+  color: #c3231e;
+}
+
+.alert-link-color {
+  color: #2168a5;
+}
+
+.btn-info {
+  background-color: #1b809e;
+}
