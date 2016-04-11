@@ -54,6 +54,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
 </head>
 
 <body>
+  <!--including the header using php-->
   <?php include "views/header.php" ?>
   <div class="container-fluid">
     <div class="col-xs-12">
@@ -71,6 +72,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                 </p>
               </div>
             </div>
+            <!--if credentials are true, then show the whole page-->
             <?php if ($credentials) { ?>
             <div class="panel-body">
               <p>Your rot13'd login is:
@@ -354,6 +356,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
       </div>
     </div>
   </div>
+  <!--if the credentials are false, show the jumbotron-->
     <?php } else { ?>
   </div>
   <div class="container-fluid">
@@ -364,7 +367,7 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
     </div>
   </div>
   <?php } ?>
-
+  <!--including the footer using php-->
   <?php include 'views/footer.php'; ?>
 
 </body>

@@ -19,6 +19,7 @@
 </head>
 
 <body>
+  <!--including the header using php-->
   <?php include "views/header.php" ?>
   <div class="jumbotron">
     <h1 class="padding-side-20">VentLog - Let it out!</h1>
@@ -47,7 +48,7 @@
 
     <br>
   </div>
-
+  <!--including the footer using php-->
   <?php include 'views/footer.php'; ?>
 
 </body>

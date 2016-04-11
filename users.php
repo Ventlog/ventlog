@@ -28,6 +28,7 @@ include_once 'model/user.php';
 </head>
 
 <body>
+  <!--including the header using php-->
   <?php include "views/header.php" ?>
 
   <div class="container-fluid">
@@ -147,7 +148,7 @@ include_once 'model/user.php';
     </div>
   </div>
   <?php } ?>
-
+  <!--including the footer using php-->
   <?php include 'views/footer.php'; ?>
 
 </body>

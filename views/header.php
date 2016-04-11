@@ -9,6 +9,7 @@
       <a class="navbar-brand" href="#"><img src="http://i.imgur.com/6t9fvhp.png" class="img-responsive smaller-logo" alt="logo"></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
+      <!--nav bar tailored depending on which page you are on-->
       <ul class="nav navbar-nav">
         <?php if (basename($_SERVER['PHP_SELF'])=='login.php') { ?>
           <li class="active"><a href="#">Login Page</a></li>
