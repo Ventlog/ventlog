@@ -14,21 +14,21 @@ function userExists($login, $password, $users) {
   return false;
 }
 
-if (isset($_COOKIE["login"])) {
-  $credentials = true;
-  $guest = false;
-} else {
-  if (isset($_POST["login"]) And isset($_POST["pwd"])) {
-    if (userExists($_POST["login"], $_POST["pwd"], $users) != false) {
-      $credentials = true;
-      $user = userExists($_POST["login"], $_POST["pwd"], $users);
-      $name = $user["full_name"];
-      setcookie("login", $user, time()+86400);
-    }
+$name = "there";
+
+if (isset($_POST["login"]) And isset($_POST["pwd"])) {
+  if (userExists($_POST["login"], $_POST["pwd"], $users) != false) {
+    $credentials = true;
+    $user = userExists($_POST["login"], $_POST["pwd"], $users);
+    $name = $user["full_name"];
+    // setcookie('login', $user["full_name"], time()+86400);
   } else {
-    $guest = true;
-    $name = "there";
+    $credentials = false;
+    $guest = false;
   }
+} else {
+  $guest = true;
+  $name = "there";
 }
 
 ?>
@@ -65,6 +65,9 @@ if (isset($_COOKIE["login"])) {
               <div class="row">
                 <p>Hello,
                   <?php echo $name; ?>
+                  <?php if (!$credentials) { ?>
+                  . Please <a href="login.php">Login</a> to access VentLog.
+                  <?php } ?>
                 </p>
               </div>
             </div>

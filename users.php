@@ -2,10 +2,8 @@
 
 include_once 'model/user.php';
 
-if ($_COOKIE) {
   $credentials = true;
   $guest = false;
-}
 
 ?>
 
