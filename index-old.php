@@ -1,7 +1,6 @@
 <?php
 
 include_once 'model/user.php';
-include_once 'model/status.php';
 
 $credentials = false;
 $guest = false;
@@ -171,9 +170,6 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
           </div>
         </div>
       </div>
-
-      <?php foreach ($statuses as &$status) { ?>
-
       <div class="row">
         <div class="col-xs-12 col-md-12">
           <div class="panel panel-default">
@@ -184,18 +180,14 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
                     alt="photo">
                 </div>
                 <div class="col-xs-9">
-                  <p><?php
-                    foreach ($users as &$user) {
-                      if ($user["id"]==$status["user_id"]) {
-                          echo $user["full_name"];
-                      }
-                    }
-                  ?></p>
+                  <p>Ian Wagener</p>
                 </div>
               </div>
             </div>
             <div class="panel-body">
-              <p><?php echo $status["vent"]; ?></p>
+              <p>sum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam
+                eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur
+                ullam nobis, vitae natus</p>
               <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reply1">Reply</button>
               <div id="reply1" class="collapse">
                 <form class="form-horizontal" role="form">
@@ -224,9 +216,98 @@ if (isset($_POST["login"]) And isset($_POST["pwd"])) {
           </div>
         </div>
       </div>
-
-      <?php } ?>
-
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading padding-bottom-0">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img class="thumbnail thumbnail-sm" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png"
+                    alt="photo">
+                </div>
+                <div class="col-xs-9">
+                  <p>William McCann</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>sum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam
+                eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur
+                ullam nobis, vitae natus</p>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reply2">Reply</button>
+              <div id="reply2" class="collapse">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="vent3" class="control-label col-sm-2">Vent:</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="vent3" placeholder="Let it out!"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label for="checkbox3">
+                          <input id="checkbox3" type="checkbox"> include location</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-md-12">
+          <div class="panel panel-default">
+            <div class="panel-heading padding-bottom-0">
+              <div class="row">
+                <div class="col-xs-3">
+                  <img class="thumbnail thumbnail-sm" src="https://www.junkfreejune.org.nz/themes/base/production/images/default-profile.png"
+                    alt="photo">
+                </div>
+                <div class="col-xs-9">
+                  <p>John Serrano</p>
+                </div>
+              </div>
+            </div>
+            <div class="panel-body">
+              <p>sum dolor sit amet, consectetur adipisicing elit. Debitis ratione delectus veniam
+                eligendi porro recusandae, placeat necessitatibus optio deserunt ducimus aspernatur
+                ullam nobis, vitae natus</p>
+              <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#reply3">Reply</button>
+              <div id="reply3" class="collapse">
+                <form class="form-horizontal" role="form">
+                  <div class="form-group">
+                    <label for="vent4" class="control-label col-sm-2">Vent:</label>
+                    <div class="col-sm-10">
+                      <textarea class="form-control" id="vent4" placeholder="Let it out!"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label for="checkbox4">
+                          <input id="checkbox4" type="checkbox"> include location</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <button type="submit" class="btn btn-default">Submit</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <br>
       <div id="extra_statuses">
         <button id="loadMoreBttn" type="button" class="btn btn-default">Load More Vents</button>

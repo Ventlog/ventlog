@@ -29,7 +29,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-4">
-        <form role="form" action="index-statuses.php" method="post">
+        <form role="form" action="index.php" method="post">
           <div class="form-group">
             <label for="email">Email address:</label>
             <input type="email" class="form-control" id="email" name="login">

@@ -11,11 +11,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <!--nav bar tailored depending on which page you are on-->
       <ul class="nav navbar-nav">
-        <?php if (basename($_SERVER['PHP_SELF'])=='login.php') { ?>
+        <?php if (basename($_SERVER['PHP_SELF'])=='login.php' Or basename($_SERVER['PHP_SELF'])=='login-statuses.php') { ?>
           <li class="active"><a href="#">Login Page</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Contact Us</a></li>
-        <?php } elseif (basename($_SERVER['PHP_SELF'])=='index.php') { ?>
+        <?php } elseif (basename($_SERVER['PHP_SELF'])=='index.php' Or basename($_SERVER['PHP_SELF'])=='index-statuses.php') { ?>
           <li class="active"><a href="#">Home</a></li>
           <li><a href="#">My Profile</a></li>
           <li><a href="users.php">Users</a></li>
