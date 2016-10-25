@@ -1,56 +1,3 @@
-.text-xs-left {
-  text-align: left;
-}
-
-.text-xs-right {
-  text-align: right;
-}
-
-.text-xs-center {
-  text-align: center;
-}
-
-@media (min-width: @screen-sm-min) {
-  .text-sm-left {
-    text-align: left;
-  }
-  .text-sm-right {
-    text-align: right;
-  }
-  .text-sm-center {
-    text-align: center;
-  }
-}
-
-@media (min-width: @screen-md-min) {
-  .text-md-left {
-    text-align: left;
-  }
-  .text-md-right {
-    text-align: right;
-  }
-  .text-md-center {
-    text-align: center;
-  }
-}
-
-@media (min-width: @screen-lg-min) {
-  .text-lg-left {
-    text-align: left;
-  }
-  .text-lg-right {
-    text-align: right;
-  }
-  .text-lg-center {
-    text-align: center;
-  }
-}
-
-.affix {
-  top: 0;
-  width: 100%;
-}
-
 .jumbotron {
   padding: 0.5em 0.6em;
   h1 {
@@ -67,6 +14,11 @@
 .padding-side-10 {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.padding-side-20 {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .padding-bottom-0 {
@@ -86,4 +38,30 @@
 .smaller-logo {
   width: 30px;
   height: 25px;
+}
+
+html,body{
+    height: 100%
+}
+
+.footer {
+  position: relative;
+  height: 50px;
+  bottom: 0;
+}
+
+.info-link-color {
+  color: #040300;
+}
+
+.alert-text-color {
+  color: #c3231e;
+}
+
+.alert-link-color {
+  color: #2168a5;
+}
+
+.btn-info {
+  background-color: #1b809e;
 }
